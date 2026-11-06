@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "rediscover": {
+      "command": "rediscover-mcp",
+      "args": [],
+      "env": {"OPENBLAS_NUM_THREADS": "2", "OMP_NUM_THREADS": "2"}
+    }
+  }
+}

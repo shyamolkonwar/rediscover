@@ -1,0 +1,3743 @@
+{
+  "created_at": "2026-11-06T18:39:48.748577+00:00",
+  "model": "gpt-6-sol",
+  "seed": 42,
+  "tasks": [
+    {
+      "run_id": "c42e9c664b784275b83b6d6e915c61de",
+      "truth_revealed_after_run": {
+        "signal": true,
+        "peak_gps": 1126259462.4,
+        "reference_time_resolution_seconds": 0.1,
+        "event": "GW150914-v3",
+        "kind": "known-event"
+      },
+      "grades": {
+        "H1": {
+          "passed": true,
+          "checks": {
+            "candidate": true,
+            "peak_within_reference_precision": true
+          },
+          "interpretation": "Educational recovery criteria; SNR >= 8 is not astrophysical significance."
+        },
+        "L1": {
+          "passed": true,
+          "checks": {
+            "candidate": true,
+            "peak_within_reference_precision": true
+          },
+          "interpretation": "Educational recovery criteria; SNR >= 8 is not astrophysical significance."
+        }
+      },
+      "passed": true,
+      "results": {
+        "run_id": "c42e9c664b784275b83b6d6e915c61de",
+        "detectors": {
+          "H1": {
+            "arguments": {
+              "detector": "H1",
+              "f_low": 30.0,
+              "masses": null
+            },
+            "evidence_id": "e-293f49ddf06a4b0c",
+            "recorded_at": "2026-11-06T18:39:08.312291+00:00",
+            "result": {
+              "candidate": true,
+              "chirp_mass": 32.55851352407689,
+              "config": {
+                "approximant": "IMRPhenomD",
+                "bank_size": 28,
+                "candidate_threshold": 8.0,
+                "edge_guard_seconds": 8.0,
+                "f_high": 1024.0,
+                "f_low": 30.0,
+                "inverse_spectrum_seconds": 4.0,
+                "inverse_spectrum_window": "hann",
+                "masses": [
+                  20.0,
+                  25.0,
+                  30.0,
+                  35.0,
+                  40.0,
+                  45.0,
+                  50.0
+                ],
+                "psd_method": "median Welch",
+                "psd_overlap_fraction": 0.5,
+                "psd_segment_seconds": 4.0,
+                "sample_rate": 4096.0,
+                "search_center": 1126259462.4,
+                "search_window_half_width": 0.3,
+                "spins": "zero",
+                "taper_seconds_each_edge": 2.0
+              },
+              "data_quality": {
+                "all_cbc_category1": true,
+                "all_data_present": true,
+                "available": true,
+                "bits": {
+                  "BURST_CAT1": true,
+                  "BURST_CAT2": true,
+                  "BURST_CAT3": true,
+                  "CBC_CAT1": true,
+                  "CBC_CAT2": true,
+                  "CBC_CAT3": true,
+                  "DATA": true
+                },
+                "injection_bits": {
+                  "NO_BURST_HW_INJ": true,
+                  "NO_CBC_HW_INJ": true,
+                  "NO_CW_HW_INJ": true,
+                  "NO_DETCHAR_HW_INJ": true,
+                  "NO_STOCH_HW_INJ": true
+                },
+                "injection_metadata_available": true
+              },
+              "detector": "H1",
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ],
+              "mass1": 40.0,
+              "mass2": 35.0,
+              "mass_frame": "detector",
+              "peak_gps": 1126259462.4274902,
+              "snr": 19.439807151833698,
+              "snr_kind": "fixed-template matched-filter SNR",
+              "warnings": [
+                "Array checks do not replace detector data-quality flags or stationarity tests.",
+                "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+              ]
+            },
+            "tool": "analyze_detector"
+          },
+          "L1": {
+            "arguments": {
+              "detector": "L1",
+              "f_low": 30.0,
+              "masses": null
+            },
+            "evidence_id": "e-4f21de92eb054ec5",
+            "recorded_at": "2026-11-06T18:39:08.612141+00:00",
+            "result": {
+              "candidate": true,
+              "chirp_mass": 30.469269715364337,
+              "config": {
+                "approximant": "IMRPhenomD",
+                "bank_size": 28,
+                "candidate_threshold": 8.0,
+                "edge_guard_seconds": 8.0,
+                "f_high": 1024.0,
+                "f_low": 30.0,
+                "inverse_spectrum_seconds": 4.0,
+                "inverse_spectrum_window": "hann",
+                "masses": [
+                  20.0,
+                  25.0,
+                  30.0,
+                  35.0,
+                  40.0,
+                  45.0,
+                  50.0
+                ],
+                "psd_method": "median Welch",
+                "psd_overlap_fraction": 0.5,
+                "psd_segment_seconds": 4.0,
+                "sample_rate": 4096.0,
+                "search_center": 1126259462.4,
+                "search_window_half_width": 0.3,
+                "spins": "zero",
+                "taper_seconds_each_edge": 2.0
+              },
+              "data_quality": {
+                "all_cbc_category1": true,
+                "all_data_present": true,
+                "available": true,
+                "bits": {
+                  "BURST_CAT1": true,
+                  "BURST_CAT2": true,
+                  "BURST_CAT3": true,
+                  "CBC_CAT1": true,
+                  "CBC_CAT2": true,
+                  "CBC_CAT3": true,
+                  "DATA": true
+                },
+                "injection_bits": {
+                  "NO_BURST_HW_INJ": true,
+                  "NO_CBC_HW_INJ": true,
+                  "NO_CW_HW_INJ": false,
+                  "NO_DETCHAR_HW_INJ": true,
+                  "NO_STOCH_HW_INJ": true
+                },
+                "injection_metadata_available": true
+              },
+              "detector": "L1",
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ],
+              "mass1": 35.0,
+              "mass2": 35.0,
+              "mass_frame": "detector",
+              "peak_gps": 1126259462.4216309,
+              "snr": 14.022706342045653,
+              "snr_kind": "fixed-template matched-filter SNR",
+              "warnings": [
+                "Array checks do not replace detector data-quality flags or stationarity tests.",
+                "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+              ]
+            },
+            "tool": "analyze_detector"
+          }
+        },
+        "combined": {
+          "h1_minus_l1_seconds": 0.005859375,
+          "within_light_travel_time": true,
+          "quadrature_snr": 23.969613998888924,
+          "note": "Independent maxima; quadrature SNR is not a coherent network statistic."
+        },
+        "limitations": [
+          "Event-centred educational reproduction, not an independent discovery search.",
+          "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+          "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+          "Independent detector peak times are template-dependent, not a coherent localization fit.",
+          "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+        ]
+      },
+      "agent": {
+        "run_id": "c42e9c664b784275b83b6d6e915c61de",
+        "requested_model": "gpt-6-sol",
+        "status": "completed",
+        "total_tokens": 8045,
+        "tool_calls": 5,
+        "elapsed_seconds": 7.599810344981961,
+        "final": {
+          "candidate": true,
+          "measurements": [
+            {
+              "detector": "H1",
+              "evidence_id": "e-293f49ddf06a4b0c",
+              "snr": 19.439807151833698,
+              "chirp_mass": 32.55851352407689,
+              "peak_gps": 1126259462.4274902
+            },
+            {
+              "detector": "L1",
+              "evidence_id": "e-4f21de92eb054ec5",
+              "snr": 14.022706342045653,
+              "chirp_mass": 30.469269715364337,
+              "peak_gps": 1126259462.4216309
+            }
+          ]
+        },
+        "validation": {
+          "valid": true,
+          "errors": [],
+          "scope": "Numerical fields, evidence IDs, detector coverage and threshold only"
+        },
+        "trace": [
+          {
+            "step": 0,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 357,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 54,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 411
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "check_data_quality",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-8a989fb12ef3467d",
+              "tool": "check_data_quality",
+              "arguments": {
+                "detector": "H1"
+              },
+              "result": {
+                "valid": true,
+                "samples": 131072,
+                "duration": 32.0,
+                "sample_rate": 4096.0,
+                "rms": 2.18086907234423e-19,
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests."
+                ],
+                "gwosc_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": true,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                }
+              },
+              "recorded_at": "2026-11-06T18:39:06.203605+00:00"
+            }
+          },
+          {
+            "tool": "check_data_quality",
+            "arguments": {
+              "detector": "L1"
+            },
+            "result": {
+              "evidence_id": "e-3782ebc8a63b45d1",
+              "tool": "check_data_quality",
+              "arguments": {
+                "detector": "L1"
+              },
+              "result": {
+                "valid": true,
+                "samples": 131072,
+                "duration": 32.0,
+                "sample_rate": 4096.0,
+                "rms": 2.308974005228782e-19,
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests."
+                ],
+                "gwosc_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": false,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                }
+              },
+              "recorded_at": "2026-11-06T18:39:06.217493+00:00"
+            }
+          },
+          {
+            "step": 1,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 987,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 54,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 1041
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "analyze_detector",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-293f49ddf06a4b0c",
+              "tool": "analyze_detector",
+              "arguments": {
+                "detector": "H1",
+                "f_low": 30.0,
+                "masses": null
+              },
+              "result": {
+                "snr": 19.439807151833698,
+                "peak_gps": 1126259462.4274902,
+                "mass1": 40.0,
+                "mass2": 35.0,
+                "chirp_mass": 32.55851352407689,
+                "candidate": true,
+                "mass_frame": "detector",
+                "snr_kind": "fixed-template matched-filter SNR",
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests.",
+                  "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                  "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                  "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                ],
+                "config": {
+                  "approximant": "IMRPhenomD",
+                  "spins": "zero",
+                  "bank_size": 28,
+                  "masses": [
+                    20.0,
+                    25.0,
+                    30.0,
+                    35.0,
+                    40.0,
+                    45.0,
+                    50.0
+                  ],
+                  "f_low": 30.0,
+                  "f_high": 1024.0,
+                  "sample_rate": 4096.0,
+                  "psd_method": "median Welch",
+                  "psd_segment_seconds": 4.0,
+                  "psd_overlap_fraction": 0.5,
+                  "inverse_spectrum_seconds": 4.0,
+                  "inverse_spectrum_window": "hann",
+                  "edge_guard_seconds": 8.0,
+                  "taper_seconds_each_edge": 2.0,
+                  "search_center": 1126259462.4,
+                  "search_window_half_width": 0.3,
+                  "candidate_threshold": 8.0
+                },
+                "detector": "H1",
+                "data_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": true,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                },
+                "limitations": [
+                  "Event-centred educational reproduction, not an independent discovery search.",
+                  "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                  "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                  "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                  "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                ]
+              },
+              "recorded_at": "2026-11-06T18:39:08.312291+00:00"
+            }
+          },
+          {
+            "tool": "analyze_detector",
+            "arguments": {
+              "detector": "L1"
+            },
+            "result": {
+              "evidence_id": "e-4f21de92eb054ec5",
+              "tool": "analyze_detector",
+              "arguments": {
+                "detector": "L1",
+                "f_low": 30.0,
+                "masses": null
+              },
+              "result": {
+                "snr": 14.022706342045653,
+                "peak_gps": 1126259462.4216309,
+                "mass1": 35.0,
+                "mass2": 35.0,
+                "chirp_mass": 30.469269715364337,
+                "candidate": true,
+                "mass_frame": "detector",
+                "snr_kind": "fixed-template matched-filter SNR",
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests.",
+                  "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                  "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                  "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                ],
+                "config": {
+                  "approximant": "IMRPhenomD",
+                  "spins": "zero",
+                  "bank_size": 28,
+                  "masses": [
+                    20.0,
+                    25.0,
+                    30.0,
+                    35.0,
+                    40.0,
+                    45.0,
+                    50.0
+                  ],
+                  "f_low": 30.0,
+                  "f_high": 1024.0,
+                  "sample_rate": 4096.0,
+                  "psd_method": "median Welch",
+                  "psd_segment_seconds": 4.0,
+                  "psd_overlap_fraction": 0.5,
+                  "inverse_spectrum_seconds": 4.0,
+                  "inverse_spectrum_window": "hann",
+                  "edge_guard_seconds": 8.0,
+                  "taper_seconds_each_edge": 2.0,
+                  "search_center": 1126259462.4,
+                  "search_window_half_width": 0.3,
+                  "candidate_threshold": 8.0
+                },
+                "detector": "L1",
+                "data_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": false,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                },
+                "limitations": [
+                  "Event-centred educational reproduction, not an independent discovery search.",
+                  "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                  "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                  "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                  "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                ]
+              },
+              "recorded_at": "2026-11-06T18:39:08.612141+00:00"
+            }
+          },
+          {
+            "step": 2,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 2433,
+              "input_tokens_details": {
+                "cache_write_tokens": 2430,
+                "cached_tokens": 0
+              },
+              "output_tokens": 14,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 2447
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "get_results",
+            "arguments": {},
+            "result": {
+              "run_id": "c42e9c664b784275b83b6d6e915c61de",
+              "detectors": {
+                "H1": {
+                  "arguments": {
+                    "detector": "H1",
+                    "f_low": 30.0,
+                    "masses": null
+                  },
+                  "evidence_id": "e-293f49ddf06a4b0c",
+                  "recorded_at": "2026-11-06T18:39:08.312291+00:00",
+                  "result": {
+                    "candidate": true,
+                    "chirp_mass": 32.55851352407689,
+                    "config": {
+                      "approximant": "IMRPhenomD",
+                      "bank_size": 28,
+                      "candidate_threshold": 8.0,
+                      "edge_guard_seconds": 8.0,
+                      "f_high": 1024.0,
+                      "f_low": 30.0,
+                      "inverse_spectrum_seconds": 4.0,
+                      "inverse_spectrum_window": "hann",
+                      "masses": [
+                        20.0,
+                        25.0,
+                        30.0,
+                        35.0,
+                        40.0,
+                        45.0,
+                        50.0
+                      ],
+                      "psd_method": "median Welch",
+                      "psd_overlap_fraction": 0.5,
+                      "psd_segment_seconds": 4.0,
+                      "sample_rate": 4096.0,
+                      "search_center": 1126259462.4,
+                      "search_window_half_width": 0.3,
+                      "spins": "zero",
+                      "taper_seconds_each_edge": 2.0
+                    },
+                    "data_quality": {
+                      "all_cbc_category1": true,
+                      "all_data_present": true,
+                      "available": true,
+                      "bits": {
+                        "BURST_CAT1": true,
+                        "BURST_CAT2": true,
+                        "BURST_CAT3": true,
+                        "CBC_CAT1": true,
+                        "CBC_CAT2": true,
+                        "CBC_CAT3": true,
+                        "DATA": true
+                      },
+                      "injection_bits": {
+                        "NO_BURST_HW_INJ": true,
+                        "NO_CBC_HW_INJ": true,
+                        "NO_CW_HW_INJ": true,
+                        "NO_DETCHAR_HW_INJ": true,
+                        "NO_STOCH_HW_INJ": true
+                      },
+                      "injection_metadata_available": true
+                    },
+                    "detector": "H1",
+                    "limitations": [
+                      "Event-centred educational reproduction, not an independent discovery search.",
+                      "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                      "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                      "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                      "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                    ],
+                    "mass1": 40.0,
+                    "mass2": 35.0,
+                    "mass_frame": "detector",
+                    "peak_gps": 1126259462.4274902,
+                    "snr": 19.439807151833698,
+                    "snr_kind": "fixed-template matched-filter SNR",
+                    "warnings": [
+                      "Array checks do not replace detector data-quality flags or stationarity tests.",
+                      "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                      "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                      "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                    ]
+                  },
+                  "tool": "analyze_detector"
+                },
+                "L1": {
+                  "arguments": {
+                    "detector": "L1",
+                    "f_low": 30.0,
+                    "masses": null
+                  },
+                  "evidence_id": "e-4f21de92eb054ec5",
+                  "recorded_at": "2026-11-06T18:39:08.612141+00:00",
+                  "result": {
+                    "candidate": true,
+                    "chirp_mass": 30.469269715364337,
+                    "config": {
+                      "approximant": "IMRPhenomD",
+                      "bank_size": 28,
+                      "candidate_threshold": 8.0,
+                      "edge_guard_seconds": 8.0,
+                      "f_high": 1024.0,
+                      "f_low": 30.0,
+                      "inverse_spectrum_seconds": 4.0,
+                      "inverse_spectrum_window": "hann",
+                      "masses": [
+                        20.0,
+                        25.0,
+                        30.0,
+                        35.0,
+                        40.0,
+                        45.0,
+                        50.0
+                      ],
+                      "psd_method": "median Welch",
+                      "psd_overlap_fraction": 0.5,
+                      "psd_segment_seconds": 4.0,
+                      "sample_rate": 4096.0,
+                      "search_center": 1126259462.4,
+                      "search_window_half_width": 0.3,
+                      "spins": "zero",
+                      "taper_seconds_each_edge": 2.0
+                    },
+                    "data_quality": {
+                      "all_cbc_category1": true,
+                      "all_data_present": true,
+                      "available": true,
+                      "bits": {
+                        "BURST_CAT1": true,
+                        "BURST_CAT2": true,
+                        "BURST_CAT3": true,
+                        "CBC_CAT1": true,
+                        "CBC_CAT2": true,
+                        "CBC_CAT3": true,
+                        "DATA": true
+                      },
+                      "injection_bits": {
+                        "NO_BURST_HW_INJ": true,
+                        "NO_CBC_HW_INJ": true,
+                        "NO_CW_HW_INJ": false,
+                        "NO_DETCHAR_HW_INJ": true,
+                        "NO_STOCH_HW_INJ": true
+                      },
+                      "injection_metadata_available": true
+                    },
+                    "detector": "L1",
+                    "limitations": [
+                      "Event-centred educational reproduction, not an independent discovery search.",
+                      "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                      "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                      "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                      "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                    ],
+                    "mass1": 35.0,
+                    "mass2": 35.0,
+                    "mass_frame": "detector",
+                    "peak_gps": 1126259462.4216309,
+                    "snr": 14.022706342045653,
+                    "snr_kind": "fixed-template matched-filter SNR",
+                    "warnings": [
+                      "Array checks do not replace detector data-quality flags or stationarity tests.",
+                      "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                      "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                      "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                    ]
+                  },
+                  "tool": "analyze_detector"
+                }
+              },
+              "combined": {
+                "h1_minus_l1_seconds": 0.005859375,
+                "within_light_travel_time": true,
+                "quadrature_snr": 23.969613998888924,
+                "note": "Independent maxima; quadrature SNR is not a coherent network statistic."
+              },
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ]
+            }
+          },
+          {
+            "step": 3,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 4014,
+              "input_tokens_details": {
+                "cache_write_tokens": 1581,
+                "cached_tokens": 2430
+              },
+              "output_tokens": 132,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 4146
+            },
+            "response_status": "completed"
+          }
+        ],
+        "budget": {
+          "max_steps": 8,
+          "max_output_tokens_per_step": 4096,
+          "max_tool_calls": 12
+        },
+        "note": "Provider errors are not retried automatically; retrying can incur additional charges.",
+        "evidence_id": "e-ab2ad8fefc344bdd"
+      }
+    },
+    {
+      "run_id": "f3e8cb53d9e949fdbbbf3ab040016321",
+      "truth_revealed_after_run": {
+        "signal": true,
+        "peak_gps": 1167559936.6,
+        "reference_time_resolution_seconds": 0.1,
+        "event": "GW170104",
+        "kind": "known-event"
+      },
+      "grades": {
+        "H1": {
+          "passed": true,
+          "checks": {
+            "candidate": true,
+            "peak_within_reference_precision": true
+          },
+          "interpretation": "Educational recovery criteria; SNR >= 8 is not astrophysical significance."
+        },
+        "L1": {
+          "passed": true,
+          "checks": {
+            "candidate": true,
+            "peak_within_reference_precision": true
+          },
+          "interpretation": "Educational recovery criteria; SNR >= 8 is not astrophysical significance."
+        }
+      },
+      "passed": true,
+      "results": {
+        "run_id": "f3e8cb53d9e949fdbbbf3ab040016321",
+        "detectors": {
+          "H1": {
+            "arguments": {
+              "detector": "H1",
+              "f_low": 30.0,
+              "masses": null
+            },
+            "evidence_id": "e-48ff58e458eb404a",
+            "recorded_at": "2026-11-06T18:39:15.823431+00:00",
+            "result": {
+              "candidate": true,
+              "chirp_mass": 26.11651689888372,
+              "config": {
+                "approximant": "IMRPhenomD",
+                "bank_size": 28,
+                "candidate_threshold": 8.0,
+                "edge_guard_seconds": 8.0,
+                "f_high": 1024.0,
+                "f_low": 30.0,
+                "inverse_spectrum_seconds": 4.0,
+                "inverse_spectrum_window": "hann",
+                "masses": [
+                  20.0,
+                  25.0,
+                  30.0,
+                  35.0,
+                  40.0,
+                  45.0,
+                  50.0
+                ],
+                "psd_method": "median Welch",
+                "psd_overlap_fraction": 0.5,
+                "psd_segment_seconds": 4.0,
+                "sample_rate": 4096.0,
+                "search_center": 1167559936.6,
+                "search_window_half_width": 0.3,
+                "spins": "zero",
+                "taper_seconds_each_edge": 2.0
+              },
+              "data_quality": {
+                "all_cbc_category1": true,
+                "all_data_present": true,
+                "available": true,
+                "bits": {
+                  "BURST_CAT1": true,
+                  "BURST_CAT2": true,
+                  "BURST_CAT3": true,
+                  "CBC_CAT1": true,
+                  "CBC_CAT2": true,
+                  "CBC_CAT3": true,
+                  "DATA": true
+                },
+                "injection_bits": {
+                  "NO_BURST_HW_INJ": true,
+                  "NO_CBC_HW_INJ": true,
+                  "NO_CW_HW_INJ": false,
+                  "NO_DETCHAR_HW_INJ": true,
+                  "NO_STOCH_HW_INJ": true
+                },
+                "injection_metadata_available": true
+              },
+              "detector": "H1",
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ],
+              "mass1": 30.0,
+              "mass2": 30.0,
+              "mass_frame": "detector",
+              "peak_gps": 1167559936.5979004,
+              "snr": 8.74323465561614,
+              "snr_kind": "fixed-template matched-filter SNR",
+              "warnings": [
+                "Array checks do not replace detector data-quality flags or stationarity tests.",
+                "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+              ]
+            },
+            "tool": "analyze_detector"
+          },
+          "L1": {
+            "arguments": {
+              "detector": "L1",
+              "f_low": 30.0,
+              "masses": null
+            },
+            "evidence_id": "e-b260b7bc07954ed2",
+            "recorded_at": "2026-11-06T18:39:16.140802+00:00",
+            "result": {
+              "candidate": true,
+              "chirp_mass": 26.11651689888372,
+              "config": {
+                "approximant": "IMRPhenomD",
+                "bank_size": 28,
+                "candidate_threshold": 8.0,
+                "edge_guard_seconds": 8.0,
+                "f_high": 1024.0,
+                "f_low": 30.0,
+                "inverse_spectrum_seconds": 4.0,
+                "inverse_spectrum_window": "hann",
+                "masses": [
+                  20.0,
+                  25.0,
+                  30.0,
+                  35.0,
+                  40.0,
+                  45.0,
+                  50.0
+                ],
+                "psd_method": "median Welch",
+                "psd_overlap_fraction": 0.5,
+                "psd_segment_seconds": 4.0,
+                "sample_rate": 4096.0,
+                "search_center": 1167559936.6,
+                "search_window_half_width": 0.3,
+                "spins": "zero",
+                "taper_seconds_each_edge": 2.0
+              },
+              "data_quality": {
+                "all_cbc_category1": true,
+                "all_data_present": true,
+                "available": true,
+                "bits": {
+                  "BURST_CAT1": true,
+                  "BURST_CAT2": true,
+                  "BURST_CAT3": true,
+                  "CBC_CAT1": true,
+                  "CBC_CAT2": true,
+                  "CBC_CAT3": true,
+                  "DATA": true
+                },
+                "injection_bits": {
+                  "NO_BURST_HW_INJ": true,
+                  "NO_CBC_HW_INJ": true,
+                  "NO_CW_HW_INJ": false,
+                  "NO_DETCHAR_HW_INJ": true,
+                  "NO_STOCH_HW_INJ": true
+                },
+                "injection_metadata_available": true
+              },
+              "detector": "L1",
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ],
+              "mass1": 30.0,
+              "mass2": 30.0,
+              "mass_frame": "detector",
+              "peak_gps": 1167559936.6010742,
+              "snr": 9.496225298299516,
+              "snr_kind": "fixed-template matched-filter SNR",
+              "warnings": [
+                "Array checks do not replace detector data-quality flags or stationarity tests.",
+                "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+              ]
+            },
+            "tool": "analyze_detector"
+          }
+        },
+        "combined": {
+          "h1_minus_l1_seconds": -0.003173828125,
+          "within_light_travel_time": true,
+          "quadrature_snr": 12.908231759587787,
+          "note": "Independent maxima; quadrature SNR is not a coherent network statistic."
+        },
+        "limitations": [
+          "Event-centred educational reproduction, not an independent discovery search.",
+          "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+          "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+          "Independent detector peak times are template-dependent, not a coherent localization fit.",
+          "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+        ]
+      },
+      "agent": {
+        "run_id": "f3e8cb53d9e949fdbbbf3ab040016321",
+        "requested_model": "gpt-6-sol",
+        "status": "completed",
+        "total_tokens": 8028,
+        "tool_calls": 5,
+        "elapsed_seconds": 7.73520793300122,
+        "final": {
+          "candidate": true,
+          "measurements": [
+            {
+              "detector": "H1",
+              "evidence_id": "e-48ff58e458eb404a",
+              "snr": 8.74323465561614,
+              "chirp_mass": 26.11651689888372,
+              "peak_gps": 1167559936.5979004
+            },
+            {
+              "detector": "L1",
+              "evidence_id": "e-b260b7bc07954ed2",
+              "snr": 9.496225298299516,
+              "chirp_mass": 26.11651689888372,
+              "peak_gps": 1167559936.6010742
+            }
+          ]
+        },
+        "validation": {
+          "valid": true,
+          "errors": [],
+          "scope": "Numerical fields, evidence IDs, detector coverage and threshold only"
+        },
+        "trace": [
+          {
+            "step": 0,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 356,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 54,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 410
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "check_data_quality",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-8acd9f9efeb6483a",
+              "tool": "check_data_quality",
+              "arguments": {
+                "detector": "H1"
+              },
+              "result": {
+                "valid": true,
+                "samples": 131072,
+                "duration": 32.0,
+                "sample_rate": 4096.0,
+                "rms": 5.323329119292255e-19,
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests."
+                ],
+                "gwosc_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": false,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                }
+              },
+              "recorded_at": "2026-11-06T18:39:13.839616+00:00"
+            }
+          },
+          {
+            "tool": "check_data_quality",
+            "arguments": {
+              "detector": "L1"
+            },
+            "result": {
+              "evidence_id": "e-495c7f7a38dc4818",
+              "tool": "check_data_quality",
+              "arguments": {
+                "detector": "L1"
+              },
+              "result": {
+                "valid": true,
+                "samples": 131072,
+                "duration": 32.0,
+                "sample_rate": 4096.0,
+                "rms": 2.9647027959348574e-19,
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests."
+                ],
+                "gwosc_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": false,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                }
+              },
+              "recorded_at": "2026-11-06T18:39:13.853004+00:00"
+            }
+          },
+          {
+            "step": 1,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 987,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 54,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 1041
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "analyze_detector",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-48ff58e458eb404a",
+              "tool": "analyze_detector",
+              "arguments": {
+                "detector": "H1",
+                "f_low": 30.0,
+                "masses": null
+              },
+              "result": {
+                "snr": 8.74323465561614,
+                "peak_gps": 1167559936.5979004,
+                "mass1": 30.0,
+                "mass2": 30.0,
+                "chirp_mass": 26.11651689888372,
+                "candidate": true,
+                "mass_frame": "detector",
+                "snr_kind": "fixed-template matched-filter SNR",
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests.",
+                  "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                  "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                  "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                ],
+                "config": {
+                  "approximant": "IMRPhenomD",
+                  "spins": "zero",
+                  "bank_size": 28,
+                  "masses": [
+                    20.0,
+                    25.0,
+                    30.0,
+                    35.0,
+                    40.0,
+                    45.0,
+                    50.0
+                  ],
+                  "f_low": 30.0,
+                  "f_high": 1024.0,
+                  "sample_rate": 4096.0,
+                  "psd_method": "median Welch",
+                  "psd_segment_seconds": 4.0,
+                  "psd_overlap_fraction": 0.5,
+                  "inverse_spectrum_seconds": 4.0,
+                  "inverse_spectrum_window": "hann",
+                  "edge_guard_seconds": 8.0,
+                  "taper_seconds_each_edge": 2.0,
+                  "search_center": 1167559936.6,
+                  "search_window_half_width": 0.3,
+                  "candidate_threshold": 8.0
+                },
+                "detector": "H1",
+                "data_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": false,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                },
+                "limitations": [
+                  "Event-centred educational reproduction, not an independent discovery search.",
+                  "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                  "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                  "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                  "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                ]
+              },
+              "recorded_at": "2026-11-06T18:39:15.823431+00:00"
+            }
+          },
+          {
+            "tool": "analyze_detector",
+            "arguments": {
+              "detector": "L1"
+            },
+            "result": {
+              "evidence_id": "e-b260b7bc07954ed2",
+              "tool": "analyze_detector",
+              "arguments": {
+                "detector": "L1",
+                "f_low": 30.0,
+                "masses": null
+              },
+              "result": {
+                "snr": 9.496225298299516,
+                "peak_gps": 1167559936.6010742,
+                "mass1": 30.0,
+                "mass2": 30.0,
+                "chirp_mass": 26.11651689888372,
+                "candidate": true,
+                "mass_frame": "detector",
+                "snr_kind": "fixed-template matched-filter SNR",
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests.",
+                  "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                  "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                  "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                ],
+                "config": {
+                  "approximant": "IMRPhenomD",
+                  "spins": "zero",
+                  "bank_size": 28,
+                  "masses": [
+                    20.0,
+                    25.0,
+                    30.0,
+                    35.0,
+                    40.0,
+                    45.0,
+                    50.0
+                  ],
+                  "f_low": 30.0,
+                  "f_high": 1024.0,
+                  "sample_rate": 4096.0,
+                  "psd_method": "median Welch",
+                  "psd_segment_seconds": 4.0,
+                  "psd_overlap_fraction": 0.5,
+                  "inverse_spectrum_seconds": 4.0,
+                  "inverse_spectrum_window": "hann",
+                  "edge_guard_seconds": 8.0,
+                  "taper_seconds_each_edge": 2.0,
+                  "search_center": 1167559936.6,
+                  "search_window_half_width": 0.3,
+                  "candidate_threshold": 8.0
+                },
+                "detector": "L1",
+                "data_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": false,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                },
+                "limitations": [
+                  "Event-centred educational reproduction, not an independent discovery search.",
+                  "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                  "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                  "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                  "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                ]
+              },
+              "recorded_at": "2026-11-06T18:39:16.140802+00:00"
+            }
+          },
+          {
+            "step": 2,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 2429,
+              "input_tokens_details": {
+                "cache_write_tokens": 2426,
+                "cached_tokens": 0
+              },
+              "output_tokens": 14,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 2443
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "get_results",
+            "arguments": {},
+            "result": {
+              "run_id": "f3e8cb53d9e949fdbbbf3ab040016321",
+              "detectors": {
+                "H1": {
+                  "arguments": {
+                    "detector": "H1",
+                    "f_low": 30.0,
+                    "masses": null
+                  },
+                  "evidence_id": "e-48ff58e458eb404a",
+                  "recorded_at": "2026-11-06T18:39:15.823431+00:00",
+                  "result": {
+                    "candidate": true,
+                    "chirp_mass": 26.11651689888372,
+                    "config": {
+                      "approximant": "IMRPhenomD",
+                      "bank_size": 28,
+                      "candidate_threshold": 8.0,
+                      "edge_guard_seconds": 8.0,
+                      "f_high": 1024.0,
+                      "f_low": 30.0,
+                      "inverse_spectrum_seconds": 4.0,
+                      "inverse_spectrum_window": "hann",
+                      "masses": [
+                        20.0,
+                        25.0,
+                        30.0,
+                        35.0,
+                        40.0,
+                        45.0,
+                        50.0
+                      ],
+                      "psd_method": "median Welch",
+                      "psd_overlap_fraction": 0.5,
+                      "psd_segment_seconds": 4.0,
+                      "sample_rate": 4096.0,
+                      "search_center": 1167559936.6,
+                      "search_window_half_width": 0.3,
+                      "spins": "zero",
+                      "taper_seconds_each_edge": 2.0
+                    },
+                    "data_quality": {
+                      "all_cbc_category1": true,
+                      "all_data_present": true,
+                      "available": true,
+                      "bits": {
+                        "BURST_CAT1": true,
+                        "BURST_CAT2": true,
+                        "BURST_CAT3": true,
+                        "CBC_CAT1": true,
+                        "CBC_CAT2": true,
+                        "CBC_CAT3": true,
+                        "DATA": true
+                      },
+                      "injection_bits": {
+                        "NO_BURST_HW_INJ": true,
+                        "NO_CBC_HW_INJ": true,
+                        "NO_CW_HW_INJ": false,
+                        "NO_DETCHAR_HW_INJ": true,
+                        "NO_STOCH_HW_INJ": true
+                      },
+                      "injection_metadata_available": true
+                    },
+                    "detector": "H1",
+                    "limitations": [
+                      "Event-centred educational reproduction, not an independent discovery search.",
+                      "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                      "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                      "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                      "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                    ],
+                    "mass1": 30.0,
+                    "mass2": 30.0,
+                    "mass_frame": "detector",
+                    "peak_gps": 1167559936.5979004,
+                    "snr": 8.74323465561614,
+                    "snr_kind": "fixed-template matched-filter SNR",
+                    "warnings": [
+                      "Array checks do not replace detector data-quality flags or stationarity tests.",
+                      "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                      "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                      "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                    ]
+                  },
+                  "tool": "analyze_detector"
+                },
+                "L1": {
+                  "arguments": {
+                    "detector": "L1",
+                    "f_low": 30.0,
+                    "masses": null
+                  },
+                  "evidence_id": "e-b260b7bc07954ed2",
+                  "recorded_at": "2026-11-06T18:39:16.140802+00:00",
+                  "result": {
+                    "candidate": true,
+                    "chirp_mass": 26.11651689888372,
+                    "config": {
+                      "approximant": "IMRPhenomD",
+                      "bank_size": 28,
+                      "candidate_threshold": 8.0,
+                      "edge_guard_seconds": 8.0,
+                      "f_high": 1024.0,
+                      "f_low": 30.0,
+                      "inverse_spectrum_seconds": 4.0,
+                      "inverse_spectrum_window": "hann",
+                      "masses": [
+                        20.0,
+                        25.0,
+                        30.0,
+                        35.0,
+                        40.0,
+                        45.0,
+                        50.0
+                      ],
+                      "psd_method": "median Welch",
+                      "psd_overlap_fraction": 0.5,
+                      "psd_segment_seconds": 4.0,
+                      "sample_rate": 4096.0,
+                      "search_center": 1167559936.6,
+                      "search_window_half_width": 0.3,
+                      "spins": "zero",
+                      "taper_seconds_each_edge": 2.0
+                    },
+                    "data_quality": {
+                      "all_cbc_category1": true,
+                      "all_data_present": true,
+                      "available": true,
+                      "bits": {
+                        "BURST_CAT1": true,
+                        "BURST_CAT2": true,
+                        "BURST_CAT3": true,
+                        "CBC_CAT1": true,
+                        "CBC_CAT2": true,
+                        "CBC_CAT3": true,
+                        "DATA": true
+                      },
+                      "injection_bits": {
+                        "NO_BURST_HW_INJ": true,
+                        "NO_CBC_HW_INJ": true,
+                        "NO_CW_HW_INJ": false,
+                        "NO_DETCHAR_HW_INJ": true,
+                        "NO_STOCH_HW_INJ": true
+                      },
+                      "injection_metadata_available": true
+                    },
+                    "detector": "L1",
+                    "limitations": [
+                      "Event-centred educational reproduction, not an independent discovery search.",
+                      "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                      "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                      "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                      "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                    ],
+                    "mass1": 30.0,
+                    "mass2": 30.0,
+                    "mass_frame": "detector",
+                    "peak_gps": 1167559936.6010742,
+                    "snr": 9.496225298299516,
+                    "snr_kind": "fixed-template matched-filter SNR",
+                    "warnings": [
+                      "Array checks do not replace detector data-quality flags or stationarity tests.",
+                      "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                      "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                      "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                    ]
+                  },
+                  "tool": "analyze_detector"
+                }
+              },
+              "combined": {
+                "h1_minus_l1_seconds": -0.003173828125,
+                "within_light_travel_time": true,
+                "quadrature_snr": 12.908231759587787,
+                "note": "Independent maxima; quadrature SNR is not a coherent network statistic."
+              },
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ]
+            }
+          },
+          {
+            "step": 3,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 4006,
+              "input_tokens_details": {
+                "cache_write_tokens": 1577,
+                "cached_tokens": 2426
+              },
+              "output_tokens": 128,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 4134
+            },
+            "response_status": "completed"
+          }
+        ],
+        "budget": {
+          "max_steps": 8,
+          "max_output_tokens_per_step": 4096,
+          "max_tool_calls": 12
+        },
+        "note": "Provider errors are not retried automatically; retrying can incur additional charges.",
+        "evidence_id": "e-393d5c72377a408e"
+      }
+    },
+    {
+      "run_id": "18124eb9fcc945dfa558ed62d6c6903b",
+      "truth_revealed_after_run": {
+        "signal": true,
+        "peak_gps": 1186741861.5,
+        "reference_time_resolution_seconds": 0.1,
+        "event": "GW170814",
+        "kind": "known-event"
+      },
+      "grades": {
+        "H1": {
+          "passed": true,
+          "checks": {
+            "candidate": true,
+            "peak_within_reference_precision": true
+          },
+          "interpretation": "Educational recovery criteria; SNR >= 8 is not astrophysical significance."
+        },
+        "L1": {
+          "passed": true,
+          "checks": {
+            "candidate": true,
+            "peak_within_reference_precision": true
+          },
+          "interpretation": "Educational recovery criteria; SNR >= 8 is not astrophysical significance."
+        }
+      },
+      "passed": true,
+      "results": {
+        "run_id": "18124eb9fcc945dfa558ed62d6c6903b",
+        "detectors": {
+          "H1": {
+            "arguments": {
+              "detector": "H1",
+              "f_low": 30.0,
+              "masses": null
+            },
+            "evidence_id": "e-9eb9a340c4d5413d",
+            "recorded_at": "2026-11-06T18:39:23.230817+00:00",
+            "result": {
+              "candidate": true,
+              "chirp_mass": 26.11651689888372,
+              "config": {
+                "approximant": "IMRPhenomD",
+                "bank_size": 28,
+                "candidate_threshold": 8.0,
+                "edge_guard_seconds": 8.0,
+                "f_high": 1024.0,
+                "f_low": 30.0,
+                "inverse_spectrum_seconds": 4.0,
+                "inverse_spectrum_window": "hann",
+                "masses": [
+                  20.0,
+                  25.0,
+                  30.0,
+                  35.0,
+                  40.0,
+                  45.0,
+                  50.0
+                ],
+                "psd_method": "median Welch",
+                "psd_overlap_fraction": 0.5,
+                "psd_segment_seconds": 4.0,
+                "sample_rate": 4096.0,
+                "search_center": 1186741861.5,
+                "search_window_half_width": 0.3,
+                "spins": "zero",
+                "taper_seconds_each_edge": 2.0
+              },
+              "data_quality": {
+                "all_cbc_category1": true,
+                "all_data_present": true,
+                "available": true,
+                "bits": {
+                  "BURST_CAT1": true,
+                  "BURST_CAT2": true,
+                  "BURST_CAT3": true,
+                  "CBC_CAT1": true,
+                  "CBC_CAT2": true,
+                  "CBC_CAT3": true,
+                  "DATA": true
+                },
+                "injection_bits": {
+                  "NO_BURST_HW_INJ": true,
+                  "NO_CBC_HW_INJ": true,
+                  "NO_CW_HW_INJ": false,
+                  "NO_DETCHAR_HW_INJ": true,
+                  "NO_STOCH_HW_INJ": true
+                },
+                "injection_metadata_available": true
+              },
+              "detector": "H1",
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ],
+              "mass1": 30.0,
+              "mass2": 30.0,
+              "mass_frame": "detector",
+              "peak_gps": 1186741861.534912,
+              "snr": 9.288652517406447,
+              "snr_kind": "fixed-template matched-filter SNR",
+              "warnings": [
+                "Array checks do not replace detector data-quality flags or stationarity tests.",
+                "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+              ]
+            },
+            "tool": "analyze_detector"
+          },
+          "L1": {
+            "arguments": {
+              "detector": "L1",
+              "f_low": 30.0,
+              "masses": null
+            },
+            "evidence_id": "e-fa1ad986ee1a4e7c",
+            "recorded_at": "2026-11-06T18:39:23.513684+00:00",
+            "result": {
+              "candidate": true,
+              "chirp_mass": 26.11651689888372,
+              "config": {
+                "approximant": "IMRPhenomD",
+                "bank_size": 28,
+                "candidate_threshold": 8.0,
+                "edge_guard_seconds": 8.0,
+                "f_high": 1024.0,
+                "f_low": 30.0,
+                "inverse_spectrum_seconds": 4.0,
+                "inverse_spectrum_window": "hann",
+                "masses": [
+                  20.0,
+                  25.0,
+                  30.0,
+                  35.0,
+                  40.0,
+                  45.0,
+                  50.0
+                ],
+                "psd_method": "median Welch",
+                "psd_overlap_fraction": 0.5,
+                "psd_segment_seconds": 4.0,
+                "sample_rate": 4096.0,
+                "search_center": 1186741861.5,
+                "search_window_half_width": 0.3,
+                "spins": "zero",
+                "taper_seconds_each_edge": 2.0
+              },
+              "data_quality": {
+                "all_cbc_category1": true,
+                "all_data_present": true,
+                "available": true,
+                "bits": {
+                  "BURST_CAT1": true,
+                  "BURST_CAT2": true,
+                  "BURST_CAT3": true,
+                  "CBC_CAT1": true,
+                  "CBC_CAT2": true,
+                  "CBC_CAT3": true,
+                  "DATA": true
+                },
+                "injection_bits": {
+                  "NO_BURST_HW_INJ": true,
+                  "NO_CBC_HW_INJ": true,
+                  "NO_CW_HW_INJ": false,
+                  "NO_DETCHAR_HW_INJ": true,
+                  "NO_STOCH_HW_INJ": true
+                },
+                "injection_metadata_available": true
+              },
+              "detector": "L1",
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ],
+              "mass1": 30.0,
+              "mass2": 30.0,
+              "mass_frame": "detector",
+              "peak_gps": 1186741861.5266113,
+              "snr": 13.06011097732906,
+              "snr_kind": "fixed-template matched-filter SNR",
+              "warnings": [
+                "Array checks do not replace detector data-quality flags or stationarity tests.",
+                "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+              ]
+            },
+            "tool": "analyze_detector"
+          }
+        },
+        "combined": {
+          "h1_minus_l1_seconds": 0.00830078125,
+          "within_light_travel_time": true,
+          "quadrature_snr": 16.02640210182161,
+          "note": "Independent maxima; quadrature SNR is not a coherent network statistic."
+        },
+        "limitations": [
+          "Event-centred educational reproduction, not an independent discovery search.",
+          "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+          "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+          "Independent detector peak times are template-dependent, not a coherent localization fit.",
+          "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+        ]
+      },
+      "agent": {
+        "run_id": "18124eb9fcc945dfa558ed62d6c6903b",
+        "requested_model": "gpt-6-sol",
+        "status": "completed",
+        "total_tokens": 8032,
+        "tool_calls": 5,
+        "elapsed_seconds": 8.271567663992755,
+        "final": {
+          "candidate": true,
+          "measurements": [
+            {
+              "detector": "H1",
+              "evidence_id": "e-9eb9a340c4d5413d",
+              "snr": 9.288652517406447,
+              "chirp_mass": 26.11651689888372,
+              "peak_gps": 1186741861.534912
+            },
+            {
+              "detector": "L1",
+              "evidence_id": "e-fa1ad986ee1a4e7c",
+              "snr": 13.06011097732906,
+              "chirp_mass": 26.11651689888372,
+              "peak_gps": 1186741861.5266113
+            }
+          ]
+        },
+        "validation": {
+          "valid": true,
+          "errors": [],
+          "scope": "Numerical fields, evidence IDs, detector coverage and threshold only"
+        },
+        "trace": [
+          {
+            "step": 0,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 353,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 54,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 407
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "check_data_quality",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-8a752eb80b2f4b38",
+              "tool": "check_data_quality",
+              "arguments": {
+                "detector": "H1"
+              },
+              "result": {
+                "valid": true,
+                "samples": 131072,
+                "duration": 32.0,
+                "sample_rate": 4096.0,
+                "rms": 5.215433030114544e-19,
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests."
+                ],
+                "gwosc_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": false,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                }
+              },
+              "recorded_at": "2026-11-06T18:39:21.566287+00:00"
+            }
+          },
+          {
+            "tool": "check_data_quality",
+            "arguments": {
+              "detector": "L1"
+            },
+            "result": {
+              "evidence_id": "e-6d7ee223c0ef44f3",
+              "tool": "check_data_quality",
+              "arguments": {
+                "detector": "L1"
+              },
+              "result": {
+                "valid": true,
+                "samples": 131072,
+                "duration": 32.0,
+                "sample_rate": 4096.0,
+                "rms": 9.445882704218287e-20,
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests."
+                ],
+                "gwosc_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": false,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                }
+              },
+              "recorded_at": "2026-11-06T18:39:21.579729+00:00"
+            }
+          },
+          {
+            "step": 1,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 985,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 54,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 1039
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "analyze_detector",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-9eb9a340c4d5413d",
+              "tool": "analyze_detector",
+              "arguments": {
+                "detector": "H1",
+                "f_low": 30.0,
+                "masses": null
+              },
+              "result": {
+                "snr": 9.288652517406447,
+                "peak_gps": 1186741861.534912,
+                "mass1": 30.0,
+                "mass2": 30.0,
+                "chirp_mass": 26.11651689888372,
+                "candidate": true,
+                "mass_frame": "detector",
+                "snr_kind": "fixed-template matched-filter SNR",
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests.",
+                  "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                  "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                  "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                ],
+                "config": {
+                  "approximant": "IMRPhenomD",
+                  "spins": "zero",
+                  "bank_size": 28,
+                  "masses": [
+                    20.0,
+                    25.0,
+                    30.0,
+                    35.0,
+                    40.0,
+                    45.0,
+                    50.0
+                  ],
+                  "f_low": 30.0,
+                  "f_high": 1024.0,
+                  "sample_rate": 4096.0,
+                  "psd_method": "median Welch",
+                  "psd_segment_seconds": 4.0,
+                  "psd_overlap_fraction": 0.5,
+                  "inverse_spectrum_seconds": 4.0,
+                  "inverse_spectrum_window": "hann",
+                  "edge_guard_seconds": 8.0,
+                  "taper_seconds_each_edge": 2.0,
+                  "search_center": 1186741861.5,
+                  "search_window_half_width": 0.3,
+                  "candidate_threshold": 8.0
+                },
+                "detector": "H1",
+                "data_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": false,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                },
+                "limitations": [
+                  "Event-centred educational reproduction, not an independent discovery search.",
+                  "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                  "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                  "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                  "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                ]
+              },
+              "recorded_at": "2026-11-06T18:39:23.230817+00:00"
+            }
+          },
+          {
+            "tool": "analyze_detector",
+            "arguments": {
+              "detector": "L1"
+            },
+            "result": {
+              "evidence_id": "e-fa1ad986ee1a4e7c",
+              "tool": "analyze_detector",
+              "arguments": {
+                "detector": "L1",
+                "f_low": 30.0,
+                "masses": null
+              },
+              "result": {
+                "snr": 13.06011097732906,
+                "peak_gps": 1186741861.5266113,
+                "mass1": 30.0,
+                "mass2": 30.0,
+                "chirp_mass": 26.11651689888372,
+                "candidate": true,
+                "mass_frame": "detector",
+                "snr_kind": "fixed-template matched-filter SNR",
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests.",
+                  "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                  "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                  "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                ],
+                "config": {
+                  "approximant": "IMRPhenomD",
+                  "spins": "zero",
+                  "bank_size": 28,
+                  "masses": [
+                    20.0,
+                    25.0,
+                    30.0,
+                    35.0,
+                    40.0,
+                    45.0,
+                    50.0
+                  ],
+                  "f_low": 30.0,
+                  "f_high": 1024.0,
+                  "sample_rate": 4096.0,
+                  "psd_method": "median Welch",
+                  "psd_segment_seconds": 4.0,
+                  "psd_overlap_fraction": 0.5,
+                  "inverse_spectrum_seconds": 4.0,
+                  "inverse_spectrum_window": "hann",
+                  "edge_guard_seconds": 8.0,
+                  "taper_seconds_each_edge": 2.0,
+                  "search_center": 1186741861.5,
+                  "search_window_half_width": 0.3,
+                  "candidate_threshold": 8.0
+                },
+                "detector": "L1",
+                "data_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": false,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                },
+                "limitations": [
+                  "Event-centred educational reproduction, not an independent discovery search.",
+                  "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                  "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                  "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                  "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                ]
+              },
+              "recorded_at": "2026-11-06T18:39:23.513684+00:00"
+            }
+          },
+          {
+            "step": 2,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 2431,
+              "input_tokens_details": {
+                "cache_write_tokens": 2428,
+                "cached_tokens": 0
+              },
+              "output_tokens": 14,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 2445
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "get_results",
+            "arguments": {},
+            "result": {
+              "run_id": "18124eb9fcc945dfa558ed62d6c6903b",
+              "detectors": {
+                "H1": {
+                  "arguments": {
+                    "detector": "H1",
+                    "f_low": 30.0,
+                    "masses": null
+                  },
+                  "evidence_id": "e-9eb9a340c4d5413d",
+                  "recorded_at": "2026-11-06T18:39:23.230817+00:00",
+                  "result": {
+                    "candidate": true,
+                    "chirp_mass": 26.11651689888372,
+                    "config": {
+                      "approximant": "IMRPhenomD",
+                      "bank_size": 28,
+                      "candidate_threshold": 8.0,
+                      "edge_guard_seconds": 8.0,
+                      "f_high": 1024.0,
+                      "f_low": 30.0,
+                      "inverse_spectrum_seconds": 4.0,
+                      "inverse_spectrum_window": "hann",
+                      "masses": [
+                        20.0,
+                        25.0,
+                        30.0,
+                        35.0,
+                        40.0,
+                        45.0,
+                        50.0
+                      ],
+                      "psd_method": "median Welch",
+                      "psd_overlap_fraction": 0.5,
+                      "psd_segment_seconds": 4.0,
+                      "sample_rate": 4096.0,
+                      "search_center": 1186741861.5,
+                      "search_window_half_width": 0.3,
+                      "spins": "zero",
+                      "taper_seconds_each_edge": 2.0
+                    },
+                    "data_quality": {
+                      "all_cbc_category1": true,
+                      "all_data_present": true,
+                      "available": true,
+                      "bits": {
+                        "BURST_CAT1": true,
+                        "BURST_CAT2": true,
+                        "BURST_CAT3": true,
+                        "CBC_CAT1": true,
+                        "CBC_CAT2": true,
+                        "CBC_CAT3": true,
+                        "DATA": true
+                      },
+                      "injection_bits": {
+                        "NO_BURST_HW_INJ": true,
+                        "NO_CBC_HW_INJ": true,
+                        "NO_CW_HW_INJ": false,
+                        "NO_DETCHAR_HW_INJ": true,
+                        "NO_STOCH_HW_INJ": true
+                      },
+                      "injection_metadata_available": true
+                    },
+                    "detector": "H1",
+                    "limitations": [
+                      "Event-centred educational reproduction, not an independent discovery search.",
+                      "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                      "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                      "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                      "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                    ],
+                    "mass1": 30.0,
+                    "mass2": 30.0,
+                    "mass_frame": "detector",
+                    "peak_gps": 1186741861.534912,
+                    "snr": 9.288652517406447,
+                    "snr_kind": "fixed-template matched-filter SNR",
+                    "warnings": [
+                      "Array checks do not replace detector data-quality flags or stationarity tests.",
+                      "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                      "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                      "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                    ]
+                  },
+                  "tool": "analyze_detector"
+                },
+                "L1": {
+                  "arguments": {
+                    "detector": "L1",
+                    "f_low": 30.0,
+                    "masses": null
+                  },
+                  "evidence_id": "e-fa1ad986ee1a4e7c",
+                  "recorded_at": "2026-11-06T18:39:23.513684+00:00",
+                  "result": {
+                    "candidate": true,
+                    "chirp_mass": 26.11651689888372,
+                    "config": {
+                      "approximant": "IMRPhenomD",
+                      "bank_size": 28,
+                      "candidate_threshold": 8.0,
+                      "edge_guard_seconds": 8.0,
+                      "f_high": 1024.0,
+                      "f_low": 30.0,
+                      "inverse_spectrum_seconds": 4.0,
+                      "inverse_spectrum_window": "hann",
+                      "masses": [
+                        20.0,
+                        25.0,
+                        30.0,
+                        35.0,
+                        40.0,
+                        45.0,
+                        50.0
+                      ],
+                      "psd_method": "median Welch",
+                      "psd_overlap_fraction": 0.5,
+                      "psd_segment_seconds": 4.0,
+                      "sample_rate": 4096.0,
+                      "search_center": 1186741861.5,
+                      "search_window_half_width": 0.3,
+                      "spins": "zero",
+                      "taper_seconds_each_edge": 2.0
+                    },
+                    "data_quality": {
+                      "all_cbc_category1": true,
+                      "all_data_present": true,
+                      "available": true,
+                      "bits": {
+                        "BURST_CAT1": true,
+                        "BURST_CAT2": true,
+                        "BURST_CAT3": true,
+                        "CBC_CAT1": true,
+                        "CBC_CAT2": true,
+                        "CBC_CAT3": true,
+                        "DATA": true
+                      },
+                      "injection_bits": {
+                        "NO_BURST_HW_INJ": true,
+                        "NO_CBC_HW_INJ": true,
+                        "NO_CW_HW_INJ": false,
+                        "NO_DETCHAR_HW_INJ": true,
+                        "NO_STOCH_HW_INJ": true
+                      },
+                      "injection_metadata_available": true
+                    },
+                    "detector": "L1",
+                    "limitations": [
+                      "Event-centred educational reproduction, not an independent discovery search.",
+                      "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                      "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                      "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                      "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                    ],
+                    "mass1": 30.0,
+                    "mass2": 30.0,
+                    "mass_frame": "detector",
+                    "peak_gps": 1186741861.5266113,
+                    "snr": 13.06011097732906,
+                    "snr_kind": "fixed-template matched-filter SNR",
+                    "warnings": [
+                      "Array checks do not replace detector data-quality flags or stationarity tests.",
+                      "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                      "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                      "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                    ]
+                  },
+                  "tool": "analyze_detector"
+                }
+              },
+              "combined": {
+                "h1_minus_l1_seconds": 0.00830078125,
+                "within_light_travel_time": true,
+                "quadrature_snr": 16.02640210182161,
+                "note": "Independent maxima; quadrature SNR is not a coherent network statistic."
+              },
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ]
+            }
+          },
+          {
+            "step": 3,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 4009,
+              "input_tokens_details": {
+                "cache_write_tokens": 1578,
+                "cached_tokens": 2428
+              },
+              "output_tokens": 132,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 4141
+            },
+            "response_status": "completed"
+          }
+        ],
+        "budget": {
+          "max_steps": 8,
+          "max_output_tokens_per_step": 4096,
+          "max_tool_calls": 12
+        },
+        "note": "Provider errors are not retried automatically; retrying can incur additional charges.",
+        "evidence_id": "e-b0d23b64ee634dc1"
+      }
+    },
+    {
+      "run_id": "c650f88336ca4dd5a79da1972f92c299",
+      "truth_revealed_after_run": {
+        "signal": true,
+        "peak_gps": 10.3,
+        "mass1": 45.0,
+        "mass2": 25.0,
+        "chirp_mass": 28.95155570925383,
+        "target_snr": 14.0,
+        "source": {
+          "url": "https://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126259447-32.hdf5",
+          "sha256": "c5ea87beced5094b56b4d694f3a36e6d59f74d3a46e546b980a6a199d1f252a9",
+          "duration": 32,
+          "detector": "H1"
+        },
+        "noise_note": "Real H1 strain; search at relative 10.3 s, known GW150914 at 15.4 s outside search window."
+      },
+      "grades": {
+        "H1": {
+          "passed": true,
+          "checks": {
+            "candidate": true,
+            "peak_within_30ms": true,
+            "chirp_mass_within_20pct": true
+          },
+          "interpretation": "Educational recovery criteria; SNR >= 8 is not astrophysical significance."
+        }
+      },
+      "passed": true,
+      "results": {
+        "run_id": "c650f88336ca4dd5a79da1972f92c299",
+        "detectors": {
+          "H1": {
+            "arguments": {
+              "detector": "H1",
+              "f_low": 30.0,
+              "masses": null
+            },
+            "evidence_id": "e-c09d1874f060404d",
+            "recorded_at": "2026-11-06T18:39:33.490954+00:00",
+            "result": {
+              "candidate": true,
+              "chirp_mass": 28.95155570925383,
+              "config": {
+                "approximant": "IMRPhenomD",
+                "bank_size": 28,
+                "candidate_threshold": 8.0,
+                "edge_guard_seconds": 8.0,
+                "f_high": 1024.0,
+                "f_low": 30.0,
+                "inverse_spectrum_seconds": 4.0,
+                "inverse_spectrum_window": "hann",
+                "masses": [
+                  20.0,
+                  25.0,
+                  30.0,
+                  35.0,
+                  40.0,
+                  45.0,
+                  50.0
+                ],
+                "psd_method": "median Welch",
+                "psd_overlap_fraction": 0.5,
+                "psd_segment_seconds": 4.0,
+                "sample_rate": 4096.0,
+                "search_center": 10.3,
+                "search_window_half_width": 0.3,
+                "spins": "zero",
+                "taper_seconds_each_edge": 2.0
+              },
+              "data_quality": {
+                "all_cbc_category1": true,
+                "all_data_present": true,
+                "available": true,
+                "bits": {
+                  "BURST_CAT1": true,
+                  "BURST_CAT2": true,
+                  "BURST_CAT3": true,
+                  "CBC_CAT1": true,
+                  "CBC_CAT2": true,
+                  "CBC_CAT3": true,
+                  "DATA": true
+                },
+                "injection_bits": {
+                  "NO_BURST_HW_INJ": true,
+                  "NO_CBC_HW_INJ": true,
+                  "NO_CW_HW_INJ": true,
+                  "NO_DETCHAR_HW_INJ": true,
+                  "NO_STOCH_HW_INJ": true
+                },
+                "injection_metadata_available": true
+              },
+              "detector": "H1",
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ],
+              "mass1": 45.0,
+              "mass2": 25.0,
+              "mass_frame": "detector",
+              "peak_gps": 10.300048828125,
+              "snr": 15.435094377987191,
+              "snr_kind": "fixed-template matched-filter SNR",
+              "warnings": [
+                "Array checks do not replace detector data-quality flags or stationarity tests.",
+                "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+              ]
+            },
+            "tool": "analyze_detector"
+          }
+        },
+        "combined": {},
+        "limitations": [
+          "Event-centred educational reproduction, not an independent discovery search.",
+          "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+          "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+          "Independent detector peak times are template-dependent, not a coherent localization fit.",
+          "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+        ]
+      },
+      "agent": {
+        "run_id": "c650f88336ca4dd5a79da1972f92c299",
+        "requested_model": "gpt-6-sol",
+        "status": "completed",
+        "total_tokens": 4667,
+        "tool_calls": 3,
+        "elapsed_seconds": 8.570005082990974,
+        "final": {
+          "candidate": true,
+          "measurements": [
+            {
+              "detector": "H1",
+              "evidence_id": "e-c09d1874f060404d",
+              "snr": 15.435094377987191,
+              "chirp_mass": 28.95155570925383,
+              "peak_gps": 10.300048828125
+            }
+          ]
+        },
+        "validation": {
+          "valid": true,
+          "errors": [],
+          "scope": "Numerical fields, evidence IDs, detector coverage and threshold only"
+        },
+        "trace": [
+          {
+            "step": 0,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 341,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 21,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 362
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "check_data_quality",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-575e02fcf16d43f3",
+              "tool": "check_data_quality",
+              "arguments": {
+                "detector": "H1"
+              },
+              "result": {
+                "valid": true,
+                "samples": 131072,
+                "duration": 32.0,
+                "sample_rate": 4096.0,
+                "rms": 2.180869044930148e-19,
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests."
+                ],
+                "gwosc_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": true,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                }
+              },
+              "recorded_at": "2026-11-06T18:39:30.645992+00:00"
+            }
+          },
+          {
+            "step": 1,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 651,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 21,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 672
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "analyze_detector",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-c09d1874f060404d",
+              "tool": "analyze_detector",
+              "arguments": {
+                "detector": "H1",
+                "f_low": 30.0,
+                "masses": null
+              },
+              "result": {
+                "snr": 15.435094377987191,
+                "peak_gps": 10.300048828125,
+                "mass1": 45.0,
+                "mass2": 25.0,
+                "chirp_mass": 28.95155570925383,
+                "candidate": true,
+                "mass_frame": "detector",
+                "snr_kind": "fixed-template matched-filter SNR",
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests.",
+                  "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                  "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                  "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                ],
+                "config": {
+                  "approximant": "IMRPhenomD",
+                  "spins": "zero",
+                  "bank_size": 28,
+                  "masses": [
+                    20.0,
+                    25.0,
+                    30.0,
+                    35.0,
+                    40.0,
+                    45.0,
+                    50.0
+                  ],
+                  "f_low": 30.0,
+                  "f_high": 1024.0,
+                  "sample_rate": 4096.0,
+                  "psd_method": "median Welch",
+                  "psd_segment_seconds": 4.0,
+                  "psd_overlap_fraction": 0.5,
+                  "inverse_spectrum_seconds": 4.0,
+                  "inverse_spectrum_window": "hann",
+                  "edge_guard_seconds": 8.0,
+                  "taper_seconds_each_edge": 2.0,
+                  "search_center": 10.3,
+                  "search_window_half_width": 0.3,
+                  "candidate_threshold": 8.0
+                },
+                "detector": "H1",
+                "data_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": true,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                },
+                "limitations": [
+                  "Event-centred educational reproduction, not an independent discovery search.",
+                  "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                  "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                  "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                  "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                ]
+              },
+              "recorded_at": "2026-11-06T18:39:33.490954+00:00"
+            }
+          },
+          {
+            "step": 2,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 1362,
+              "input_tokens_details": {
+                "cache_write_tokens": 1359,
+                "cached_tokens": 0
+              },
+              "output_tokens": 14,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 1376
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "get_results",
+            "arguments": {},
+            "result": {
+              "run_id": "c650f88336ca4dd5a79da1972f92c299",
+              "detectors": {
+                "H1": {
+                  "arguments": {
+                    "detector": "H1",
+                    "f_low": 30.0,
+                    "masses": null
+                  },
+                  "evidence_id": "e-c09d1874f060404d",
+                  "recorded_at": "2026-11-06T18:39:33.490954+00:00",
+                  "result": {
+                    "candidate": true,
+                    "chirp_mass": 28.95155570925383,
+                    "config": {
+                      "approximant": "IMRPhenomD",
+                      "bank_size": 28,
+                      "candidate_threshold": 8.0,
+                      "edge_guard_seconds": 8.0,
+                      "f_high": 1024.0,
+                      "f_low": 30.0,
+                      "inverse_spectrum_seconds": 4.0,
+                      "inverse_spectrum_window": "hann",
+                      "masses": [
+                        20.0,
+                        25.0,
+                        30.0,
+                        35.0,
+                        40.0,
+                        45.0,
+                        50.0
+                      ],
+                      "psd_method": "median Welch",
+                      "psd_overlap_fraction": 0.5,
+                      "psd_segment_seconds": 4.0,
+                      "sample_rate": 4096.0,
+                      "search_center": 10.3,
+                      "search_window_half_width": 0.3,
+                      "spins": "zero",
+                      "taper_seconds_each_edge": 2.0
+                    },
+                    "data_quality": {
+                      "all_cbc_category1": true,
+                      "all_data_present": true,
+                      "available": true,
+                      "bits": {
+                        "BURST_CAT1": true,
+                        "BURST_CAT2": true,
+                        "BURST_CAT3": true,
+                        "CBC_CAT1": true,
+                        "CBC_CAT2": true,
+                        "CBC_CAT3": true,
+                        "DATA": true
+                      },
+                      "injection_bits": {
+                        "NO_BURST_HW_INJ": true,
+                        "NO_CBC_HW_INJ": true,
+                        "NO_CW_HW_INJ": true,
+                        "NO_DETCHAR_HW_INJ": true,
+                        "NO_STOCH_HW_INJ": true
+                      },
+                      "injection_metadata_available": true
+                    },
+                    "detector": "H1",
+                    "limitations": [
+                      "Event-centred educational reproduction, not an independent discovery search.",
+                      "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                      "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                      "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                      "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                    ],
+                    "mass1": 45.0,
+                    "mass2": 25.0,
+                    "mass_frame": "detector",
+                    "peak_gps": 10.300048828125,
+                    "snr": 15.435094377987191,
+                    "snr_kind": "fixed-template matched-filter SNR",
+                    "warnings": [
+                      "Array checks do not replace detector data-quality flags or stationarity tests.",
+                      "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                      "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                      "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                    ]
+                  },
+                  "tool": "analyze_detector"
+                }
+              },
+              "combined": {},
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ]
+            }
+          },
+          {
+            "step": 3,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 2188,
+              "input_tokens_details": {
+                "cache_write_tokens": 826,
+                "cached_tokens": 1359
+              },
+              "output_tokens": 69,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 2257
+            },
+            "response_status": "completed"
+          }
+        ],
+        "budget": {
+          "max_steps": 8,
+          "max_output_tokens_per_step": 4096,
+          "max_tool_calls": 12
+        },
+        "note": "Provider errors are not retried automatically; retrying can incur additional charges.",
+        "evidence_id": "e-d4bdbe044ccd49f2"
+      }
+    },
+    {
+      "run_id": "d192c8738f7b4bfdac0bd5ae0c18907a",
+      "truth_revealed_after_run": {
+        "signal": true,
+        "peak_gps": 10.3,
+        "mass1": 35.0,
+        "mass2": 30.0,
+        "chirp_mass": 28.19232596224401,
+        "target_snr": 14.0,
+        "source": {
+          "url": "https://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126259447-32.hdf5",
+          "sha256": "c5ea87beced5094b56b4d694f3a36e6d59f74d3a46e546b980a6a199d1f252a9",
+          "duration": 32,
+          "detector": "H1"
+        },
+        "noise_note": "Real H1 strain; search at relative 10.3 s, known GW150914 at 15.4 s outside search window."
+      },
+      "grades": {
+        "H1": {
+          "passed": true,
+          "checks": {
+            "candidate": true,
+            "peak_within_30ms": true,
+            "chirp_mass_within_20pct": true
+          },
+          "interpretation": "Educational recovery criteria; SNR >= 8 is not astrophysical significance."
+        }
+      },
+      "passed": true,
+      "results": {
+        "run_id": "d192c8738f7b4bfdac0bd5ae0c18907a",
+        "detectors": {
+          "H1": {
+            "arguments": {
+              "detector": "H1",
+              "f_low": 30.0,
+              "masses": null
+            },
+            "evidence_id": "e-4e0d2bc62e21493d",
+            "recorded_at": "2026-11-06T18:39:39.529221+00:00",
+            "result": {
+              "candidate": true,
+              "chirp_mass": 28.19232596224401,
+              "config": {
+                "approximant": "IMRPhenomD",
+                "bank_size": 28,
+                "candidate_threshold": 8.0,
+                "edge_guard_seconds": 8.0,
+                "f_high": 1024.0,
+                "f_low": 30.0,
+                "inverse_spectrum_seconds": 4.0,
+                "inverse_spectrum_window": "hann",
+                "masses": [
+                  20.0,
+                  25.0,
+                  30.0,
+                  35.0,
+                  40.0,
+                  45.0,
+                  50.0
+                ],
+                "psd_method": "median Welch",
+                "psd_overlap_fraction": 0.5,
+                "psd_segment_seconds": 4.0,
+                "sample_rate": 4096.0,
+                "search_center": 10.3,
+                "search_window_half_width": 0.3,
+                "spins": "zero",
+                "taper_seconds_each_edge": 2.0
+              },
+              "data_quality": {
+                "all_cbc_category1": true,
+                "all_data_present": true,
+                "available": true,
+                "bits": {
+                  "BURST_CAT1": true,
+                  "BURST_CAT2": true,
+                  "BURST_CAT3": true,
+                  "CBC_CAT1": true,
+                  "CBC_CAT2": true,
+                  "CBC_CAT3": true,
+                  "DATA": true
+                },
+                "injection_bits": {
+                  "NO_BURST_HW_INJ": true,
+                  "NO_CBC_HW_INJ": true,
+                  "NO_CW_HW_INJ": true,
+                  "NO_DETCHAR_HW_INJ": true,
+                  "NO_STOCH_HW_INJ": true
+                },
+                "injection_metadata_available": true
+              },
+              "detector": "H1",
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ],
+              "mass1": 35.0,
+              "mass2": 30.0,
+              "mass_frame": "detector",
+              "peak_gps": 10.300048828125,
+              "snr": 10.935370791549262,
+              "snr_kind": "fixed-template matched-filter SNR",
+              "warnings": [
+                "Array checks do not replace detector data-quality flags or stationarity tests.",
+                "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+              ]
+            },
+            "tool": "analyze_detector"
+          }
+        },
+        "combined": {},
+        "limitations": [
+          "Event-centred educational reproduction, not an independent discovery search.",
+          "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+          "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+          "Independent detector peak times are template-dependent, not a coherent localization fit.",
+          "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+        ]
+      },
+      "agent": {
+        "run_id": "d192c8738f7b4bfdac0bd5ae0c18907a",
+        "requested_model": "gpt-6-sol",
+        "status": "completed",
+        "total_tokens": 4683,
+        "tool_calls": 3,
+        "elapsed_seconds": 5.73423812299734,
+        "final": {
+          "candidate": true,
+          "measurements": [
+            {
+              "detector": "H1",
+              "evidence_id": "e-4e0d2bc62e21493d",
+              "snr": 10.935370791549262,
+              "chirp_mass": 28.19232596224401,
+              "peak_gps": 10.300048828125
+            }
+          ]
+        },
+        "validation": {
+          "valid": true,
+          "errors": [],
+          "scope": "Numerical fields, evidence IDs, detector coverage and threshold only"
+        },
+        "trace": [
+          {
+            "step": 0,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 343,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 21,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 364
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "check_data_quality",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-b9d73ae0842240bd",
+              "tool": "check_data_quality",
+              "arguments": {
+                "detector": "H1"
+              },
+              "result": {
+                "valid": true,
+                "samples": 131072,
+                "duration": 32.0,
+                "sample_rate": 4096.0,
+                "rms": 2.18086902271346e-19,
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests."
+                ],
+                "gwosc_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": true,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                }
+              },
+              "recorded_at": "2026-11-06T18:39:38.176063+00:00"
+            }
+          },
+          {
+            "step": 1,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 651,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 21,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 672
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "analyze_detector",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-4e0d2bc62e21493d",
+              "tool": "analyze_detector",
+              "arguments": {
+                "detector": "H1",
+                "f_low": 30.0,
+                "masses": null
+              },
+              "result": {
+                "snr": 10.935370791549262,
+                "peak_gps": 10.300048828125,
+                "mass1": 35.0,
+                "mass2": 30.0,
+                "chirp_mass": 28.19232596224401,
+                "candidate": true,
+                "mass_frame": "detector",
+                "snr_kind": "fixed-template matched-filter SNR",
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests.",
+                  "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                  "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                  "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                ],
+                "config": {
+                  "approximant": "IMRPhenomD",
+                  "spins": "zero",
+                  "bank_size": 28,
+                  "masses": [
+                    20.0,
+                    25.0,
+                    30.0,
+                    35.0,
+                    40.0,
+                    45.0,
+                    50.0
+                  ],
+                  "f_low": 30.0,
+                  "f_high": 1024.0,
+                  "sample_rate": 4096.0,
+                  "psd_method": "median Welch",
+                  "psd_segment_seconds": 4.0,
+                  "psd_overlap_fraction": 0.5,
+                  "inverse_spectrum_seconds": 4.0,
+                  "inverse_spectrum_window": "hann",
+                  "edge_guard_seconds": 8.0,
+                  "taper_seconds_each_edge": 2.0,
+                  "search_center": 10.3,
+                  "search_window_half_width": 0.3,
+                  "candidate_threshold": 8.0
+                },
+                "detector": "H1",
+                "data_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": true,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                },
+                "limitations": [
+                  "Event-centred educational reproduction, not an independent discovery search.",
+                  "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                  "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                  "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                  "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                ]
+              },
+              "recorded_at": "2026-11-06T18:39:39.529221+00:00"
+            }
+          },
+          {
+            "step": 2,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 1365,
+              "input_tokens_details": {
+                "cache_write_tokens": 1362,
+                "cached_tokens": 0
+              },
+              "output_tokens": 14,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 1379
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "get_results",
+            "arguments": {},
+            "result": {
+              "run_id": "d192c8738f7b4bfdac0bd5ae0c18907a",
+              "detectors": {
+                "H1": {
+                  "arguments": {
+                    "detector": "H1",
+                    "f_low": 30.0,
+                    "masses": null
+                  },
+                  "evidence_id": "e-4e0d2bc62e21493d",
+                  "recorded_at": "2026-11-06T18:39:39.529221+00:00",
+                  "result": {
+                    "candidate": true,
+                    "chirp_mass": 28.19232596224401,
+                    "config": {
+                      "approximant": "IMRPhenomD",
+                      "bank_size": 28,
+                      "candidate_threshold": 8.0,
+                      "edge_guard_seconds": 8.0,
+                      "f_high": 1024.0,
+                      "f_low": 30.0,
+                      "inverse_spectrum_seconds": 4.0,
+                      "inverse_spectrum_window": "hann",
+                      "masses": [
+                        20.0,
+                        25.0,
+                        30.0,
+                        35.0,
+                        40.0,
+                        45.0,
+                        50.0
+                      ],
+                      "psd_method": "median Welch",
+                      "psd_overlap_fraction": 0.5,
+                      "psd_segment_seconds": 4.0,
+                      "sample_rate": 4096.0,
+                      "search_center": 10.3,
+                      "search_window_half_width": 0.3,
+                      "spins": "zero",
+                      "taper_seconds_each_edge": 2.0
+                    },
+                    "data_quality": {
+                      "all_cbc_category1": true,
+                      "all_data_present": true,
+                      "available": true,
+                      "bits": {
+                        "BURST_CAT1": true,
+                        "BURST_CAT2": true,
+                        "BURST_CAT3": true,
+                        "CBC_CAT1": true,
+                        "CBC_CAT2": true,
+                        "CBC_CAT3": true,
+                        "DATA": true
+                      },
+                      "injection_bits": {
+                        "NO_BURST_HW_INJ": true,
+                        "NO_CBC_HW_INJ": true,
+                        "NO_CW_HW_INJ": true,
+                        "NO_DETCHAR_HW_INJ": true,
+                        "NO_STOCH_HW_INJ": true
+                      },
+                      "injection_metadata_available": true
+                    },
+                    "detector": "H1",
+                    "limitations": [
+                      "Event-centred educational reproduction, not an independent discovery search.",
+                      "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                      "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                      "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                      "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                    ],
+                    "mass1": 35.0,
+                    "mass2": 30.0,
+                    "mass_frame": "detector",
+                    "peak_gps": 10.300048828125,
+                    "snr": 10.935370791549262,
+                    "snr_kind": "fixed-template matched-filter SNR",
+                    "warnings": [
+                      "Array checks do not replace detector data-quality flags or stationarity tests.",
+                      "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                      "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                      "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+                    ]
+                  },
+                  "tool": "analyze_detector"
+                }
+              },
+              "combined": {},
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ]
+            }
+          },
+          {
+            "step": 3,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 2196,
+              "input_tokens_details": {
+                "cache_write_tokens": 831,
+                "cached_tokens": 1362
+              },
+              "output_tokens": 72,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 2268
+            },
+            "response_status": "completed"
+          }
+        ],
+        "budget": {
+          "max_steps": 8,
+          "max_output_tokens_per_step": 4096,
+          "max_tool_calls": 12
+        },
+        "note": "Provider errors are not retried automatically; retrying can incur additional charges.",
+        "evidence_id": "e-0ee3906c801b4d9d"
+      }
+    },
+    {
+      "run_id": "62affdf753f84267a9bbf90673b0d050",
+      "truth_revealed_after_run": {
+        "signal": false,
+        "peak_gps": 10.3,
+        "source": {
+          "url": "https://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126259447-32.hdf5",
+          "sha256": "c5ea87beced5094b56b4d694f3a36e6d59f74d3a46e546b980a6a199d1f252a9",
+          "duration": 32,
+          "detector": "H1"
+        },
+        "noise_note": "Real H1 strain; search at relative 10.3 s, known GW150914 at 15.4 s outside search window."
+      },
+      "grades": {
+        "H1": {
+          "passed": true,
+          "checks": {
+            "candidate": true
+          },
+          "interpretation": "Educational recovery criteria; SNR >= 8 is not astrophysical significance."
+        }
+      },
+      "passed": true,
+      "results": {
+        "run_id": "62affdf753f84267a9bbf90673b0d050",
+        "detectors": {
+          "H1": {
+            "arguments": {
+              "detector": "H1",
+              "f_low": 30.0,
+              "masses": null
+            },
+            "evidence_id": "e-f31ecbf1b1eb480f",
+            "recorded_at": "2026-11-06T18:39:46.038316+00:00",
+            "result": {
+              "candidate": false,
+              "chirp_mass": 17.411011265922482,
+              "config": {
+                "approximant": "IMRPhenomD",
+                "bank_size": 28,
+                "candidate_threshold": 8.0,
+                "edge_guard_seconds": 8.0,
+                "f_high": 1024.0,
+                "f_low": 30.0,
+                "inverse_spectrum_seconds": 4.0,
+                "inverse_spectrum_window": "hann",
+                "masses": [
+                  20.0,
+                  25.0,
+                  30.0,
+                  35.0,
+                  40.0,
+                  45.0,
+                  50.0
+                ],
+                "psd_method": "median Welch",
+                "psd_overlap_fraction": 0.5,
+                "psd_segment_seconds": 4.0,
+                "sample_rate": 4096.0,
+                "search_center": 10.3,
+                "search_window_half_width": 0.3,
+                "spins": "zero",
+                "taper_seconds_each_edge": 2.0
+              },
+              "data_quality": {
+                "all_cbc_category1": true,
+                "all_data_present": true,
+                "available": true,
+                "bits": {
+                  "BURST_CAT1": true,
+                  "BURST_CAT2": true,
+                  "BURST_CAT3": true,
+                  "CBC_CAT1": true,
+                  "CBC_CAT2": true,
+                  "CBC_CAT3": true,
+                  "DATA": true
+                },
+                "injection_bits": {
+                  "NO_BURST_HW_INJ": true,
+                  "NO_CBC_HW_INJ": true,
+                  "NO_CW_HW_INJ": true,
+                  "NO_DETCHAR_HW_INJ": true,
+                  "NO_STOCH_HW_INJ": true
+                },
+                "injection_metadata_available": true
+              },
+              "detector": "H1",
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ],
+              "mass1": 20.0,
+              "mass2": 20.0,
+              "mass_frame": "detector",
+              "peak_gps": 10.3740234375,
+              "snr": 4.00202885095679,
+              "snr_kind": "fixed-template matched-filter SNR",
+              "warnings": [
+                "Array checks do not replace detector data-quality flags or stationarity tests.",
+                "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                "PSD is estimated from this segment and may include the signal; no glitch veto is applied.",
+                "No candidate above the uncalibrated display threshold; the returned peak can be noise."
+              ]
+            },
+            "tool": "analyze_detector"
+          }
+        },
+        "combined": {},
+        "limitations": [
+          "Event-centred educational reproduction, not an independent discovery search.",
+          "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+          "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+          "Independent detector peak times are template-dependent, not a coherent localization fit.",
+          "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+        ]
+      },
+      "agent": {
+        "run_id": "62affdf753f84267a9bbf90673b0d050",
+        "requested_model": "gpt-6-sol",
+        "status": "completed",
+        "total_tokens": 4717,
+        "tool_calls": 3,
+        "elapsed_seconds": 6.694606019998901,
+        "final": {
+          "candidate": false,
+          "measurements": [
+            {
+              "detector": "H1",
+              "evidence_id": "e-f31ecbf1b1eb480f",
+              "snr": 4.00202885095679,
+              "chirp_mass": 17.411011265922482,
+              "peak_gps": 10.3740234375
+            }
+          ]
+        },
+        "validation": {
+          "valid": true,
+          "errors": [],
+          "scope": "Numerical fields, evidence IDs, detector coverage and threshold only"
+        },
+        "trace": [
+          {
+            "step": 0,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 340,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 21,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 361
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "check_data_quality",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-c562edd8919b4da8",
+              "tool": "check_data_quality",
+              "arguments": {
+                "detector": "H1"
+              },
+              "result": {
+                "valid": true,
+                "samples": 131072,
+                "duration": 32.0,
+                "sample_rate": 4096.0,
+                "rms": 2.18086907234423e-19,
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests."
+                ],
+                "gwosc_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": true,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                }
+              },
+              "recorded_at": "2026-11-06T18:39:43.859089+00:00"
+            }
+          },
+          {
+            "step": 1,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 648,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 21,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 669
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "analyze_detector",
+            "arguments": {
+              "detector": "H1"
+            },
+            "result": {
+              "evidence_id": "e-f31ecbf1b1eb480f",
+              "tool": "analyze_detector",
+              "arguments": {
+                "detector": "H1",
+                "f_low": 30.0,
+                "masses": null
+              },
+              "result": {
+                "snr": 4.00202885095679,
+                "peak_gps": 10.3740234375,
+                "mass1": 20.0,
+                "mass2": 20.0,
+                "chirp_mass": 17.411011265922482,
+                "candidate": false,
+                "mass_frame": "detector",
+                "snr_kind": "fixed-template matched-filter SNR",
+                "warnings": [
+                  "Array checks do not replace detector data-quality flags or stationarity tests.",
+                  "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                  "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                  "PSD is estimated from this segment and may include the signal; no glitch veto is applied.",
+                  "No candidate above the uncalibrated display threshold; the returned peak can be noise."
+                ],
+                "config": {
+                  "approximant": "IMRPhenomD",
+                  "spins": "zero",
+                  "bank_size": 28,
+                  "masses": [
+                    20.0,
+                    25.0,
+                    30.0,
+                    35.0,
+                    40.0,
+                    45.0,
+                    50.0
+                  ],
+                  "f_low": 30.0,
+                  "f_high": 1024.0,
+                  "sample_rate": 4096.0,
+                  "psd_method": "median Welch",
+                  "psd_segment_seconds": 4.0,
+                  "psd_overlap_fraction": 0.5,
+                  "inverse_spectrum_seconds": 4.0,
+                  "inverse_spectrum_window": "hann",
+                  "edge_guard_seconds": 8.0,
+                  "taper_seconds_each_edge": 2.0,
+                  "search_center": 10.3,
+                  "search_window_half_width": 0.3,
+                  "candidate_threshold": 8.0
+                },
+                "detector": "H1",
+                "data_quality": {
+                  "all_cbc_category1": true,
+                  "all_data_present": true,
+                  "available": true,
+                  "bits": {
+                    "BURST_CAT1": true,
+                    "BURST_CAT2": true,
+                    "BURST_CAT3": true,
+                    "CBC_CAT1": true,
+                    "CBC_CAT2": true,
+                    "CBC_CAT3": true,
+                    "DATA": true
+                  },
+                  "injection_bits": {
+                    "NO_BURST_HW_INJ": true,
+                    "NO_CBC_HW_INJ": true,
+                    "NO_CW_HW_INJ": true,
+                    "NO_DETCHAR_HW_INJ": true,
+                    "NO_STOCH_HW_INJ": true
+                  },
+                  "injection_metadata_available": true
+                },
+                "limitations": [
+                  "Event-centred educational reproduction, not an independent discovery search.",
+                  "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                  "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                  "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                  "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                ]
+              },
+              "recorded_at": "2026-11-06T18:39:46.038316+00:00"
+            }
+          },
+          {
+            "step": 2,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 1379,
+              "input_tokens_details": {
+                "cache_write_tokens": 1376,
+                "cached_tokens": 0
+              },
+              "output_tokens": 14,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 1393
+            },
+            "response_status": "completed"
+          },
+          {
+            "tool": "get_results",
+            "arguments": {},
+            "result": {
+              "run_id": "62affdf753f84267a9bbf90673b0d050",
+              "detectors": {
+                "H1": {
+                  "arguments": {
+                    "detector": "H1",
+                    "f_low": 30.0,
+                    "masses": null
+                  },
+                  "evidence_id": "e-f31ecbf1b1eb480f",
+                  "recorded_at": "2026-11-06T18:39:46.038316+00:00",
+                  "result": {
+                    "candidate": false,
+                    "chirp_mass": 17.411011265922482,
+                    "config": {
+                      "approximant": "IMRPhenomD",
+                      "bank_size": 28,
+                      "candidate_threshold": 8.0,
+                      "edge_guard_seconds": 8.0,
+                      "f_high": 1024.0,
+                      "f_low": 30.0,
+                      "inverse_spectrum_seconds": 4.0,
+                      "inverse_spectrum_window": "hann",
+                      "masses": [
+                        20.0,
+                        25.0,
+                        30.0,
+                        35.0,
+                        40.0,
+                        45.0,
+                        50.0
+                      ],
+                      "psd_method": "median Welch",
+                      "psd_overlap_fraction": 0.5,
+                      "psd_segment_seconds": 4.0,
+                      "sample_rate": 4096.0,
+                      "search_center": 10.3,
+                      "search_window_half_width": 0.3,
+                      "spins": "zero",
+                      "taper_seconds_each_edge": 2.0
+                    },
+                    "data_quality": {
+                      "all_cbc_category1": true,
+                      "all_data_present": true,
+                      "available": true,
+                      "bits": {
+                        "BURST_CAT1": true,
+                        "BURST_CAT2": true,
+                        "BURST_CAT3": true,
+                        "CBC_CAT1": true,
+                        "CBC_CAT2": true,
+                        "CBC_CAT3": true,
+                        "DATA": true
+                      },
+                      "injection_bits": {
+                        "NO_BURST_HW_INJ": true,
+                        "NO_CBC_HW_INJ": true,
+                        "NO_CW_HW_INJ": true,
+                        "NO_DETCHAR_HW_INJ": true,
+                        "NO_STOCH_HW_INJ": true
+                      },
+                      "injection_metadata_available": true
+                    },
+                    "detector": "H1",
+                    "limitations": [
+                      "Event-centred educational reproduction, not an independent discovery search.",
+                      "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                      "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                      "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                      "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+                    ],
+                    "mass1": 20.0,
+                    "mass2": 20.0,
+                    "mass_frame": "detector",
+                    "peak_gps": 10.3740234375,
+                    "snr": 4.00202885095679,
+                    "snr_kind": "fixed-template matched-filter SNR",
+                    "warnings": [
+                      "Array checks do not replace detector data-quality flags or stationarity tests.",
+                      "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+                      "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+                      "PSD is estimated from this segment and may include the signal; no glitch veto is applied.",
+                      "No candidate above the uncalibrated display threshold; the returned peak can be noise."
+                    ]
+                  },
+                  "tool": "analyze_detector"
+                }
+              },
+              "combined": {},
+              "limitations": [
+                "Event-centred educational reproduction, not an independent discovery search.",
+                "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+                "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+                "Independent detector peak times are template-dependent, not a coherent localization fit.",
+                "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+              ]
+            }
+          },
+          {
+            "step": 3,
+            "model": "gpt-6-sol",
+            "usage": {
+              "input_tokens": 2224,
+              "input_tokens_details": {
+                "cache_write_tokens": 845,
+                "cached_tokens": 1376
+              },
+              "output_tokens": 70,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 2294
+            },
+            "response_status": "completed"
+          }
+        ],
+        "budget": {
+          "max_steps": 8,
+          "max_output_tokens_per_step": 4096,
+          "max_tool_calls": 12
+        },
+        "note": "Provider errors are not retried automatically; retrying can incur additional charges.",
+        "evidence_id": "e-bead62ad4ec64b35"
+      }
+    }
+  ],
+  "setup_failures": [],
+  "passed": 6,
+  "total": 6,
+  "limitations": [
+    "Small demonstration suite, not a model leaderboard.",
+    "Named events may be memorized; opaque injections test use of provided numerical tools.",
+    "Injection truth is unavailable through agent tools, not secret from the machine operator.",
+    "Fixed finite bank with low-spin high-mass systems; does not cover the full GW population.",
+    "No background time-slide study; threshold results are not false-alarm probabilities."
+  ]
+}

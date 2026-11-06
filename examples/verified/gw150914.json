@@ -1,0 +1,494 @@
+{
+  "catalog": {
+    "sets": [
+      {
+        "data_url": "",
+        "date_added": "2020-02-19",
+        "description": "na",
+        "is_preferred": false,
+        "links": [],
+        "name": "gwtc1_cwb_GW150914",
+        "parameters": [
+          {
+            "best": 0.000163,
+            "decimal_places": 2,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": true,
+            "lower_error": null,
+            "name": "far",
+            "unit": "yr^-1",
+            "upper_error": null
+          },
+          {
+            "best": 25.2,
+            "decimal_places": 1,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": null,
+            "name": "network_matched_filter_snr",
+            "unit": "",
+            "upper_error": null
+          },
+          {
+            "best": 1.0,
+            "decimal_places": 2,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": null,
+            "name": "p_astro",
+            "unit": "",
+            "upper_error": null
+          }
+        ],
+        "pipeline": "cwb",
+        "pipeline_type": "search",
+        "waveform_family": "na"
+      },
+      {
+        "data_url": "",
+        "date_added": "2020-02-19",
+        "description": "na",
+        "is_preferred": false,
+        "links": [],
+        "name": "gwtc1_gstlal_GW150914",
+        "parameters": [
+          {
+            "best": 1e-07,
+            "decimal_places": 2,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": true,
+            "lower_error": null,
+            "name": "far",
+            "unit": "yr^-1",
+            "upper_error": null
+          },
+          {
+            "best": 24.4,
+            "decimal_places": 1,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": null,
+            "name": "network_matched_filter_snr",
+            "unit": "",
+            "upper_error": null
+          },
+          {
+            "best": 1.0,
+            "decimal_places": 2,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": null,
+            "name": "p_astro",
+            "unit": "",
+            "upper_error": null
+          }
+        ],
+        "pipeline": "gstlal",
+        "pipeline_type": "search",
+        "waveform_family": "na"
+      },
+      {
+        "data_url": "https://dcc.ligo.org/public/0157/P1800370/005/GW150914_GWTC-1.hdf5",
+        "date_added": "2020-02-19",
+        "description": "na",
+        "is_preferred": true,
+        "links": [
+          {
+            "description": "DCC entry containing posterior samples for this PE run",
+            "label": "posterior-samples",
+            "url": "https://dcc.ligo.org/LIGO-P1800370/public"
+          }
+        ],
+        "name": "gwtc1_pe_GW150914",
+        "parameters": [
+          {
+            "best": 0.69,
+            "decimal_places": 2,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": -0.04,
+            "name": "a_final",
+            "unit": "",
+            "upper_error": 0.05
+          },
+          {
+            "best": -0.01,
+            "decimal_places": 2,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": -0.13,
+            "name": "chi_eff",
+            "unit": "",
+            "upper_error": 0.12
+          },
+          {
+            "best": 28.6,
+            "decimal_places": 1,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": -1.5,
+            "name": "chirp_mass_source",
+            "unit": "M_sun",
+            "upper_error": 1.7
+          },
+          {
+            "best": 3.1,
+            "decimal_places": 1,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": -0.4,
+            "name": "E_rad",
+            "unit": "M_sun c^2",
+            "upper_error": 0.4
+          },
+          {
+            "best": 63.1,
+            "decimal_places": 1,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": -3.0,
+            "name": "final_mass_source",
+            "unit": "M_sun",
+            "upper_error": 3.4
+          },
+          {
+            "best": 1126259462.4,
+            "decimal_places": 1,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": null,
+            "name": "geocent_time",
+            "unit": "",
+            "upper_error": null
+          },
+          {
+            "best": 3.6,
+            "decimal_places": 1,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": -0.4,
+            "name": "L_peak",
+            "unit": "10^56 erg s^-1",
+            "upper_error": 0.4
+          },
+          {
+            "best": 440.0,
+            "decimal_places": 0,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": -170.0,
+            "name": "luminosity_distance",
+            "unit": "Mpc",
+            "upper_error": 150.0
+          },
+          {
+            "best": 35.6,
+            "decimal_places": 1,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": -3.1,
+            "name": "mass_1_source",
+            "unit": "M_sun",
+            "upper_error": 4.7
+          },
+          {
+            "best": 30.6,
+            "decimal_places": 1,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": -4.4,
+            "name": "mass_2_source",
+            "unit": "M_sun",
+            "upper_error": 3.0
+          },
+          {
+            "best": 0.09,
+            "decimal_places": 2,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": -0.03,
+            "name": "redshift",
+            "unit": "",
+            "upper_error": 0.03
+          },
+          {
+            "best": 182.0,
+            "decimal_places": 0,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": null,
+            "name": "sky_area",
+            "unit": "deg^2",
+            "upper_error": null
+          }
+        ],
+        "pipeline": "lalinference",
+        "pipeline_type": "pe",
+        "waveform_family": "Overall_posterior"
+      },
+      {
+        "data_url": "",
+        "date_added": "2020-02-19",
+        "description": "na",
+        "is_preferred": false,
+        "links": [],
+        "name": "gwtc1_pycbc_GW150914",
+        "parameters": [
+          {
+            "best": 1.5300000000000003e-05,
+            "decimal_places": 2,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": true,
+            "lower_error": null,
+            "name": "far",
+            "unit": "yr^-1",
+            "upper_error": null
+          },
+          {
+            "best": 23.6,
+            "decimal_places": 1,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": null,
+            "name": "network_matched_filter_snr",
+            "unit": "",
+            "upper_error": null
+          },
+          {
+            "best": 1.0,
+            "decimal_places": 2,
+            "description": "na",
+            "is_lower_limit": false,
+            "is_upper_limit": false,
+            "lower_error": null,
+            "name": "p_astro",
+            "unit": "",
+            "upper_error": null
+          }
+        ],
+        "pipeline": "pycbc",
+        "pipeline_type": "search",
+        "waveform_family": "na"
+      }
+    ],
+    "source_url": "https://gwosc.org/api/v2/event-versions/GW150914-v3/parameters?format=json",
+    "warning": "Catalog inference differs from this finite nonspinning template search. Source-frame masses must not be compared directly to detector-frame masses."
+  },
+  "combined": {
+    "h1_minus_l1_seconds": 0.005859375,
+    "note": "Independent maxima; quadrature SNR is not a coherent network statistic.",
+    "quadrature_snr": 23.969613998888924,
+    "within_light_travel_time": true
+  },
+  "detectors": {
+    "H1": {
+      "arguments": {
+        "detector": "H1",
+        "f_low": 30.0,
+        "masses": null
+      },
+      "evidence_id": "e-948717c58cb34384",
+      "recorded_at": "2026-11-06T18:39:01.866516+00:00",
+      "result": {
+        "candidate": true,
+        "chirp_mass": 32.55851352407689,
+        "config": {
+          "approximant": "IMRPhenomD",
+          "bank_size": 28,
+          "candidate_threshold": 8.0,
+          "edge_guard_seconds": 8.0,
+          "f_high": 1024.0,
+          "f_low": 30.0,
+          "inverse_spectrum_seconds": 4.0,
+          "inverse_spectrum_window": "hann",
+          "masses": [
+            20.0,
+            25.0,
+            30.0,
+            35.0,
+            40.0,
+            45.0,
+            50.0
+          ],
+          "psd_method": "median Welch",
+          "psd_overlap_fraction": 0.5,
+          "psd_segment_seconds": 4.0,
+          "sample_rate": 4096.0,
+          "search_center": 1126259462.4,
+          "search_window_half_width": 0.3,
+          "spins": "zero",
+          "taper_seconds_each_edge": 2.0
+        },
+        "data_quality": {
+          "all_cbc_category1": true,
+          "all_data_present": true,
+          "available": true,
+          "bits": {
+            "BURST_CAT1": true,
+            "BURST_CAT2": true,
+            "BURST_CAT3": true,
+            "CBC_CAT1": true,
+            "CBC_CAT2": true,
+            "CBC_CAT3": true,
+            "DATA": true
+          },
+          "injection_bits": {
+            "NO_BURST_HW_INJ": true,
+            "NO_CBC_HW_INJ": true,
+            "NO_CW_HW_INJ": true,
+            "NO_DETCHAR_HW_INJ": true,
+            "NO_STOCH_HW_INJ": true
+          },
+          "injection_metadata_available": true
+        },
+        "detector": "H1",
+        "limitations": [
+          "Event-centred educational reproduction, not an independent discovery search.",
+          "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+          "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+          "Independent detector peak times are template-dependent, not a coherent localization fit.",
+          "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+        ],
+        "mass1": 40.0,
+        "mass2": 35.0,
+        "mass_frame": "detector",
+        "peak_gps": 1126259462.4274902,
+        "snr": 19.439807151833698,
+        "snr_kind": "fixed-template matched-filter SNR",
+        "warnings": [
+          "Array checks do not replace detector data-quality flags or stationarity tests.",
+          "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+          "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+          "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+        ]
+      },
+      "tool": "analyze_detector"
+    },
+    "L1": {
+      "arguments": {
+        "detector": "L1",
+        "f_low": 30.0,
+        "masses": null
+      },
+      "evidence_id": "e-c344f3425d474648",
+      "recorded_at": "2026-11-06T18:39:02.155035+00:00",
+      "result": {
+        "candidate": true,
+        "chirp_mass": 30.469269715364337,
+        "config": {
+          "approximant": "IMRPhenomD",
+          "bank_size": 28,
+          "candidate_threshold": 8.0,
+          "edge_guard_seconds": 8.0,
+          "f_high": 1024.0,
+          "f_low": 30.0,
+          "inverse_spectrum_seconds": 4.0,
+          "inverse_spectrum_window": "hann",
+          "masses": [
+            20.0,
+            25.0,
+            30.0,
+            35.0,
+            40.0,
+            45.0,
+            50.0
+          ],
+          "psd_method": "median Welch",
+          "psd_overlap_fraction": 0.5,
+          "psd_segment_seconds": 4.0,
+          "sample_rate": 4096.0,
+          "search_center": 1126259462.4,
+          "search_window_half_width": 0.3,
+          "spins": "zero",
+          "taper_seconds_each_edge": 2.0
+        },
+        "data_quality": {
+          "all_cbc_category1": true,
+          "all_data_present": true,
+          "available": true,
+          "bits": {
+            "BURST_CAT1": true,
+            "BURST_CAT2": true,
+            "BURST_CAT3": true,
+            "CBC_CAT1": true,
+            "CBC_CAT2": true,
+            "CBC_CAT3": true,
+            "DATA": true
+          },
+          "injection_bits": {
+            "NO_BURST_HW_INJ": true,
+            "NO_CBC_HW_INJ": true,
+            "NO_CW_HW_INJ": false,
+            "NO_DETCHAR_HW_INJ": true,
+            "NO_STOCH_HW_INJ": true
+          },
+          "injection_metadata_available": true
+        },
+        "detector": "L1",
+        "limitations": [
+          "Event-centred educational reproduction, not an independent discovery search.",
+          "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+          "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+          "Independent detector peak times are template-dependent, not a coherent localization fit.",
+          "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+        ],
+        "mass1": 35.0,
+        "mass2": 35.0,
+        "mass_frame": "detector",
+        "peak_gps": 1126259462.4216309,
+        "snr": 14.022706342045653,
+        "snr_kind": "fixed-template matched-filter SNR",
+        "warnings": [
+          "Array checks do not replace detector data-quality flags or stationarity tests.",
+          "Fixed-template SNR maximized over this finite bank/time window is not a false-alarm probability.",
+          "Masses are coarse detector-frame nonspinning template estimates, not Bayesian credible intervals.",
+          "PSD is estimated from this segment and may include the signal; no glitch veto is applied."
+        ]
+      },
+      "tool": "analyze_detector"
+    }
+  },
+  "limitations": [
+    "Event-centred educational reproduction, not an independent discovery search.",
+    "Peak matched-filter SNR is not a false-alarm probability or detection significance.",
+    "Masses are coarse, detector-frame, nonspinning bank estimates, not posterior intervals.",
+    "Independent detector peak times are template-dependent, not a coherent localization fit.",
+    "A short-segment PSD and finite template bank do not reproduce the collaboration pipeline."
+  ],
+  "plot_warnings": [],
+  "run_id": "017c729c1f194c15b2d1df713ab76e38",
+  "sources": [
+    {
+      "detector": "H1",
+      "duration": 32,
+      "sha256": "c5ea87beced5094b56b4d694f3a36e6d59f74d3a46e546b980a6a199d1f252a9",
+      "url": "https://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/H-H1_GWOSC_4KHZ_R1-1126259447-32.hdf5"
+    },
+    {
+      "detector": "L1",
+      "duration": 32,
+      "sha256": "9d65bde82f7ec035bea4c02228bce4acb3dcaae774c047edce71ef2ad64f1cc4",
+      "url": "https://gwosc.org/eventapi/json/GWTC-1-confident/GW150914/v3/L-L1_GWOSC_4KHZ_R1-1126259447-32.hdf5"
+    }
+  ]
+}

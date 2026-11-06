@@ -1,0 +1,12 @@
+{
+  "src/rediscover/__init__.py": "cf21d25afc5a6770b94d7e62ed1ee45118403ec20ca5bd56c486af5783e280a6",
+  "src/rediscover/agent.py": "6621b83edfba4905beaebf5994d8ffd318c14ba706f4e6a0703a5682ab89b039",
+  "src/rediscover/benchmark.py": "9f9e99dd2edc125c9f6e7f4d4d9a6a495691982b3b4852ff5328be5db9da22d9",
+  "src/rediscover/cli.py": "427023c5e325114379f57d4e403a96a74d0e2d101698556bdc4d625a6807a071",
+  "src/rediscover/data.py": "9bfcd112320510dbb0f44c32f7d8c0a74ea9820f576e1c31df8b434ade10c986",
+  "src/rediscover/mcp_server.py": "879c170fc2d7950a754f62ab9bb2c58dc536107612154852da2db22694c5ab44",
+  "src/rediscover/physics.py": "6b012d11fb4d6f37c175875c065a6fa0a28e81e6a148fed07670ebe530d7ef6e",
+  "src/rediscover/report.py": "5c4c9917f19da12373e55bc972f2f1897c05b21446e18f28986d1da8bc673f89",
+  "src/rediscover/service.py": "98f652d92694d639869dd4611533becc6eee33b869bea5b1ad03546f57c86186",
+  "src/rediscover/workspace.py": "4a6bb9b6d7ebc72f31bd2e396dc64e44a1f073b3f8d2a5887aebcf9f7029fe79"
+}
