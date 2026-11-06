@@ -1,0 +1,20 @@
+{
+  "src/rediscover/__init__.py": "b4aa5567a1311ddf4123841068125ac8367ddf73c7b3537063a810d20cf68e6d",
+  "src/rediscover/agent.py": "6621b83edfba4905beaebf5994d8ffd318c14ba706f4e6a0703a5682ab89b039",
+  "src/rediscover/benchmark.py": "9f9e99dd2edc125c9f6e7f4d4d9a6a495691982b3b4852ff5328be5db9da22d9",
+  "src/rediscover/campaigns.py": "a96a865e40fd07653ce0551124e648e5af9ca4f0a03956f8d6d04191c1a33168",
+  "src/rediscover/cli.py": "710a4b53e4c92fc4ec0ace6c0ad5d2adabd0de1f022896d925df976ba7da2df2",
+  "src/rediscover/data.py": "9bfcd112320510dbb0f44c32f7d8c0a74ea9820f576e1c31df8b434ade10c986",
+  "src/rediscover/mcp_server.py": "c2d95b8d5f9eba12cdd768aa368000420c82c1cf147c33dad7d6909b009e562d",
+  "src/rediscover/physics.py": "6b012d11fb4d6f37c175875c065a6fa0a28e81e6a148fed07670ebe530d7ef6e",
+  "src/rediscover/report.py": "5c4c9917f19da12373e55bc972f2f1897c05b21446e18f28986d1da8bc673f89",
+  "src/rediscover/research_agent.py": "4cab52da9c27de7115502a38ab7a2419843eed8977971afc95682cad6cbabddf",
+  "src/rediscover/sandbox.py": "41b26017df46d488c6256cbc06c78bf226d1ca32aa93b0cb7c0fbae86df080fb",
+  "src/rediscover/service.py": "98f652d92694d639869dd4611533becc6eee33b869bea5b1ad03546f57c86186",
+  "src/rediscover/tess_cli.py": "d5c59e341f666afdd369576ce9791b1e536a3afe70f2f2c2e4073fde2f8d8682",
+  "src/rediscover/tess_data.py": "78845e31ba1978258017a01d48562915982c52b965622c8184d0adb3268d581f",
+  "src/rediscover/tess_mcp.py": "fbcf5c17ab73fff951f5a2a8f7ff44fba0491ab42e79637ffba9f2e054af886a",
+  "src/rediscover/tess_report.py": "7c08c9447c0b812c9b1b5c424a04eaeb8787f3081a68ab49fc36b47b601c3053",
+  "src/rediscover/transit.py": "2a91c0ec521139eed4034b1cc1854dad197d94574590384cfe0e31b4a4bdce3b",
+  "src/rediscover/workspace.py": "c73409799dd9eabdffe4eee89c95ba1a30d851098c7f709b9051bc6eb24a435a"
+}

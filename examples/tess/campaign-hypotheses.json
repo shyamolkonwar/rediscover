@@ -1,0 +1,532 @@
+{
+  "frozen_at": "2026-11-06T19:18:31.614822+00:00",
+  "hypotheses": [
+    {
+      "alternatives": [
+        "Eclipsing binary",
+        "Stellar variability",
+        "Instrumental artifact",
+        "Blended neighboring star"
+      ],
+      "candidate": {
+        "aliases": [
+          {
+            "bls_power": 21.44411462288093,
+            "factor": 0.5,
+            "in_search_range": true,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": 2.3130439811468064,
+            "target_period_days": 2.312843347019025
+          },
+          {
+            "bls_power": null,
+            "factor": 2.0,
+            "in_search_range": false,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": null,
+            "target_period_days": 9.2513733880761
+          }
+        ],
+        "bls_power": 40.98925781955281,
+        "candidate_flag": true,
+        "coverage_truncated": false,
+        "depth": 0.000836106840253259,
+        "depth_error": 9.348039420588013e-05,
+        "depth_snr": 8.944194634137155,
+        "duration_days": 0.12,
+        "epoch_btjd": 1325.3646656488213,
+        "flags": [],
+        "n_in_transit": 456,
+        "n_transits": 6,
+        "n_well_sampled_transits": 6,
+        "observed_transit_numbers": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "odd_even_sigma": 4.786531398834108,
+        "period_days": 4.62568669403805,
+        "secondary_depth": 2.5808791830450595e-05,
+        "secondary_snr": 0.2918666240422464,
+        "sinusoid_amplitude": 6.465979017288576e-05,
+        "sinusoid_snr": 2.8825110515884598,
+        "test_statuses": {
+          "odd_even": "evaluated",
+          "pixel_contamination": "not_evaluated",
+          "secondary": "evaluated",
+          "sinusoid": "evaluated",
+          "sky_vetting": "not_evaluated"
+        },
+        "transit_coverage": [
+          {
+            "n_samples": 87,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 0
+          },
+          {
+            "n_samples": 77,
+            "sampled_duration_fraction": 0.8912093233940748,
+            "transit_number": 1
+          },
+          {
+            "n_samples": 87,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 2
+          },
+          {
+            "n_samples": 87,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 4
+          },
+          {
+            "n_samples": 34,
+            "sampled_duration_fraction": 0.3935209999402408,
+            "transit_number": 5
+          },
+          {
+            "n_samples": 84,
+            "sampled_duration_fraction": 0.972228352793536,
+            "transit_number": 6
+          }
+        ]
+      },
+      "prediction": "The fixed period, epoch and duration predict dips in the reserved sector.",
+      "tic": "25079777"
+    },
+    {
+      "alternatives": [
+        "Eclipsing binary",
+        "Stellar variability",
+        "Instrumental artifact",
+        "Blended neighboring star"
+      ],
+      "candidate": {
+        "aliases": [
+          {
+            "bls_power": 19.24902482621026,
+            "factor": 0.5,
+            "in_search_range": true,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": 3.673908051256143,
+            "target_period_days": 3.6734019103600293
+          },
+          {
+            "bls_power": null,
+            "factor": 2.0,
+            "in_search_range": false,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": null,
+            "target_period_days": 14.693607641440117
+          }
+        ],
+        "bls_power": 37.83739750583634,
+        "candidate_flag": false,
+        "coverage_truncated": false,
+        "depth": 0.0007941557334925076,
+        "depth_error": 9.217036372802234e-05,
+        "depth_snr": 8.61617228544214,
+        "duration_days": 0.12,
+        "epoch_btjd": 1331.028742094514,
+        "flags": [
+          "odd_even_depth_mismatch"
+        ],
+        "n_in_transit": 344,
+        "n_transits": 4,
+        "n_well_sampled_transits": 4,
+        "observed_transit_numbers": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "odd_even_sigma": 5.0683152873636095,
+        "period_days": 7.3468038207200586,
+        "secondary_depth": 9.961136841929452e-06,
+        "secondary_snr": 0.10607965904300569,
+        "sinusoid_amplitude": 9.637325730510656e-05,
+        "sinusoid_snr": 5.307511647862298,
+        "test_statuses": {
+          "odd_even": "evaluated",
+          "pixel_contamination": "not_evaluated",
+          "secondary": "evaluated",
+          "sinusoid": "evaluated",
+          "sky_vetting": "not_evaluated"
+        },
+        "transit_coverage": [
+          {
+            "n_samples": 87,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 0
+          },
+          {
+            "n_samples": 86,
+            "sampled_duration_fraction": 0.9953757280262229,
+            "transit_number": 1
+          },
+          {
+            "n_samples": 86,
+            "sampled_duration_fraction": 0.9953757280262229,
+            "transit_number": 2
+          },
+          {
+            "n_samples": 85,
+            "sampled_duration_fraction": 0.983801591653825,
+            "transit_number": 3
+          }
+        ]
+      },
+      "prediction": "The fixed period, epoch and duration predict dips in the reserved sector.",
+      "tic": "32154131"
+    },
+    {
+      "alternatives": [
+        "Eclipsing binary",
+        "Stellar variability",
+        "Instrumental artifact",
+        "Blended neighboring star"
+      ],
+      "candidate": {
+        "aliases": [
+          {
+            "bls_power": 13.39786893729346,
+            "factor": 0.5,
+            "in_search_range": true,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": 2.707646481399993,
+            "target_period_days": 2.707371556217424
+          },
+          {
+            "bls_power": null,
+            "factor": 2.0,
+            "in_search_range": false,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": null,
+            "target_period_days": 10.829486224869695
+          }
+        ],
+        "bls_power": 35.31039855605767,
+        "candidate_flag": false,
+        "coverage_truncated": false,
+        "depth": 0.0006255065009526106,
+        "depth_error": 7.560595717681053e-05,
+        "depth_snr": 8.273243594943374,
+        "duration_days": 0.12,
+        "epoch_btjd": 1327.5623920846142,
+        "flags": [
+          "odd_even_depth_mismatch"
+        ],
+        "n_in_transit": 365,
+        "n_transits": 5,
+        "n_well_sampled_transits": 5,
+        "observed_transit_numbers": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "odd_even_sigma": 7.260035032109247,
+        "period_days": 5.414743112434848,
+        "secondary_depth": -0.00010752664563806746,
+        "secondary_snr": -1.4037374346564124,
+        "sinusoid_amplitude": 9.550898754861283e-05,
+        "sinusoid_snr": 5.723657168997335,
+        "test_statuses": {
+          "odd_even": "evaluated",
+          "pixel_contamination": "not_evaluated",
+          "secondary": "evaluated",
+          "sinusoid": "evaluated",
+          "sky_vetting": "not_evaluated"
+        },
+        "transit_coverage": [
+          {
+            "n_samples": 86,
+            "sampled_duration_fraction": 0.9953843214172291,
+            "transit_number": 0
+          },
+          {
+            "n_samples": 86,
+            "sampled_duration_fraction": 0.9953843214172291,
+            "transit_number": 1
+          },
+          {
+            "n_samples": 87,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 2
+          },
+          {
+            "n_samples": 86,
+            "sampled_duration_fraction": 0.9953843214172291,
+            "transit_number": 3
+          },
+          {
+            "n_samples": 20,
+            "sampled_duration_fraction": 0.2314847259109835,
+            "transit_number": 4
+          }
+        ]
+      },
+      "prediction": "The fixed period, epoch and duration predict dips in the reserved sector.",
+      "tic": "55400333"
+    },
+    {
+      "alternatives": [
+        "Eclipsing binary",
+        "Stellar variability",
+        "Instrumental artifact",
+        "Blended neighboring star"
+      ],
+      "candidate": {
+        "aliases": [
+          {
+            "bls_power": 33.65526709685884,
+            "factor": 0.5,
+            "in_search_range": true,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": 3.7145112607383326,
+            "target_period_days": 3.7139938712972422
+          },
+          {
+            "bls_power": null,
+            "factor": 2.0,
+            "in_search_range": false,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": null,
+            "target_period_days": 14.855975485188969
+          }
+        ],
+        "bls_power": 53.77077073195018,
+        "candidate_flag": false,
+        "coverage_truncated": false,
+        "depth": 0.0007762106819112491,
+        "depth_error": 7.709203712293747e-05,
+        "depth_snr": 10.068623308960406,
+        "duration_days": 0.12,
+        "epoch_btjd": 1331.0272711871528,
+        "flags": [
+          "odd_even_depth_mismatch"
+        ],
+        "n_in_transit": 260,
+        "n_transits": 3,
+        "n_well_sampled_transits": 3,
+        "observed_transit_numbers": [
+          0,
+          1,
+          2
+        ],
+        "odd_even_sigma": 9.987000487691237,
+        "period_days": 7.4279877425944845,
+        "secondary_depth": 0.00010732468061103173,
+        "secondary_snr": 1.5753294883777282,
+        "sinusoid_amplitude": 4.711128266082773e-05,
+        "sinusoid_snr": 3.6057784557325614,
+        "test_statuses": {
+          "odd_even": "evaluated",
+          "pixel_contamination": "not_evaluated",
+          "secondary": "evaluated",
+          "sinusoid": "evaluated",
+          "sky_vetting": "not_evaluated"
+        },
+        "transit_coverage": [
+          {
+            "n_samples": 87,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 0
+          },
+          {
+            "n_samples": 87,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 1
+          },
+          {
+            "n_samples": 86,
+            "sampled_duration_fraction": 0.9953742466374631,
+            "transit_number": 2
+          }
+        ]
+      },
+      "prediction": "The fixed period, epoch and duration predict dips in the reserved sector.",
+      "tic": "150142653"
+    },
+    {
+      "alternatives": [
+        "Eclipsing binary",
+        "Stellar variability",
+        "Instrumental artifact",
+        "Blended neighboring star"
+      ],
+      "candidate": {
+        "aliases": [
+          {
+            "bls_power": 20.968026801897576,
+            "factor": 0.5,
+            "in_search_range": true,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": 3.244190290789634,
+            "target_period_days": 3.2437956204379566
+          },
+          {
+            "bls_power": null,
+            "factor": 2.0,
+            "in_search_range": false,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": null,
+            "target_period_days": 12.975182481751826
+          }
+        ],
+        "bls_power": 37.98425907172564,
+        "candidate_flag": false,
+        "coverage_truncated": false,
+        "depth": 0.0004743958109829638,
+        "depth_error": 5.5001216725163685e-05,
+        "depth_snr": 8.625187572730955,
+        "duration_days": 0.08,
+        "epoch_btjd": 1325.3369859343693,
+        "flags": [
+          "odd_even_depth_mismatch"
+        ],
+        "n_in_transit": 283,
+        "n_transits": 5,
+        "n_well_sampled_transits": 5,
+        "observed_transit_numbers": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "odd_even_sigma": 5.866624984510246,
+        "period_days": 6.487591240875913,
+        "secondary_depth": -0.00010587885901525151,
+        "secondary_snr": -1.5024467047148193,
+        "sinusoid_amplitude": 4.271358370278986e-05,
+        "sinusoid_snr": 4.373276361093754,
+        "test_statuses": {
+          "odd_even": "evaluated",
+          "pixel_contamination": "not_evaluated",
+          "secondary": "evaluated",
+          "sinusoid": "evaluated",
+          "sky_vetting": "not_evaluated"
+        },
+        "transit_coverage": [
+          {
+            "n_samples": 58,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 0
+          },
+          {
+            "n_samples": 56,
+            "sampled_duration_fraction": 0.972206920255303,
+            "transit_number": 1
+          },
+          {
+            "n_samples": 57,
+            "sampled_duration_fraction": 0.9895677581170048,
+            "transit_number": 2
+          },
+          {
+            "n_samples": 57,
+            "sampled_duration_fraction": 0.9895677581170048,
+            "transit_number": 3
+          },
+          {
+            "n_samples": 55,
+            "sampled_duration_fraction": 0.9548460823936011,
+            "transit_number": 4
+          }
+        ]
+      },
+      "prediction": "The fixed period, epoch and duration predict dips in the reserved sector.",
+      "tic": "261062496"
+    },
+    {
+      "alternatives": [
+        "Eclipsing binary",
+        "Stellar variability",
+        "Instrumental artifact",
+        "Blended neighboring star"
+      ],
+      "candidate": {
+        "aliases": [
+          {
+            "bls_power": 40.506949266242,
+            "factor": 0.5,
+            "in_search_range": true,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": 3.9978009895547,
+            "target_period_days": 3.997201678992604
+          },
+          {
+            "bls_power": null,
+            "factor": 2.0,
+            "in_search_range": false,
+            "interpretation": "nearest grid power only; alias not ruled out",
+            "nearest_grid_period_days": null,
+            "target_period_days": 15.988806715970416
+          }
+        ],
+        "bls_power": 85.71816685201513,
+        "candidate_flag": false,
+        "coverage_truncated": false,
+        "depth": 0.0007318829038637231,
+        "depth_error": 6.132166595384685e-05,
+        "depth_snr": 11.935143843198382,
+        "duration_days": 0.12,
+        "epoch_btjd": 1326.2918688102452,
+        "flags": [
+          "sinusoidal_variability"
+        ],
+        "n_in_transit": 347,
+        "n_transits": 4,
+        "n_well_sampled_transits": 4,
+        "observed_transit_numbers": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "odd_even_sigma": 0.1971352867250056,
+        "period_days": 7.994403357985208,
+        "secondary_depth": -0.00022920195372155838,
+        "secondary_snr": -3.206121166226531,
+        "sinusoid_amplitude": 0.00023269340282000632,
+        "sinusoid_snr": 19.07567357795576,
+        "test_statuses": {
+          "odd_even": "evaluated",
+          "pixel_contamination": "not_evaluated",
+          "secondary": "evaluated",
+          "sinusoid": "evaluated",
+          "sky_vetting": "not_evaluated"
+        },
+        "transit_coverage": [
+          {
+            "n_samples": 86,
+            "sampled_duration_fraction": 0.9953780230299951,
+            "transit_number": 0
+          },
+          {
+            "n_samples": 87,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 1
+          },
+          {
+            "n_samples": 87,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 2
+          },
+          {
+            "n_samples": 87,
+            "sampled_duration_fraction": 1.0,
+            "transit_number": 3
+          }
+        ]
+      },
+      "prediction": "The fixed period, epoch and duration predict dips in the reserved sector.",
+      "tic": "309613894"
+    }
+  ],
+  "search_sha256": "dc0b878337eb49f8041678647381b5b7d52f6e64322e60574720ec3b7538bb06"
+}

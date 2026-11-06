@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-11-06T19:11:39.984462+00:00",
+  "platform": "Linux",
+  "python": "3.12.3",
+  "versions": {
+    "gwpy": "source-checkout",
+    "mcp": "2.3.0",
+    "numpy": "2.5.4",
+    "pycbc": "source-checkout",
+    "rediscover-physics": "source-checkout",
+    "scipy": "1.18.1"
+  }
+}

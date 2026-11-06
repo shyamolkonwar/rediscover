@@ -58,7 +58,7 @@ class Workspace:
         self.path(run_id).mkdir(parents=True)
         self.save(run_id, "input.json", inputs)
         versions = {}
-        for name in ["numpy", "scipy", "pycbc", "gwpy", "mcp", "rediscover-physics"]:
+        for name in ["numpy", "scipy", "astropy", "astroquery", "pycbc", "gwpy", "mcp", "rediscover-physics"]:
             try:
                 versions[name] = importlib.metadata.version(name)
             except importlib.metadata.PackageNotFoundError:

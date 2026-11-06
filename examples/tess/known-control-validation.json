@@ -1,0 +1,100 @@
+{
+  "completed_at": "2026-11-06T19:19:54.675044+00:00",
+  "one_shot": true,
+  "targets": [
+    {
+      "candidate_flag": false,
+      "config": {
+        "detrend_window_days": 1.5,
+        "durations_days": [
+          0.04,
+          0.08,
+          0.12
+        ],
+        "min_transits": 3,
+        "period_grid_size": 10000,
+        "period_max": 8.0,
+        "period_min": 1.0,
+        "snr_threshold": 8.0
+      },
+      "coverage_truncated": false,
+      "data": {
+        "bjd_reference": 2457000.0,
+        "crowding": 0.99967819,
+        "flux_fraction": 0.97924227,
+        "quality_policy": "QUALITY == 0; finite time/flux; finite positive error",
+        "raw_rows": 18684,
+        "removed_rows": 4042,
+        "sector": 4,
+        "source": {
+          "retrieved_at": "2026-11-06T19:19:54.623051+00:00",
+          "sha256": "92a59bb156b927c5df6b4ab7c7e5bd7bdd884f523aeda2764c64712cfc27bfcf",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000261136679-0124-s_lc.fits",
+          "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3ATESS%2Fproduct%2Ftess2018292075959-s0004-0000000261136679-0124-s_lc.fits"
+        },
+        "tic": "261136679",
+        "time_system": "BTJD_TDB",
+        "valid_rows": 14642
+      },
+      "depth": 0.00036760646288780396,
+      "depth_error": 1.0174849348457749e-05,
+      "depth_snr": 36.128934227760716,
+      "duration_days": 0.12,
+      "ephemeris_fixed": true,
+      "epoch_btjd": 1325.5049604950605,
+      "flags": [
+        "sinusoidal_variability",
+        "significant_secondary"
+      ],
+      "n_in_transit": 255,
+      "n_transits": 3,
+      "n_well_sampled_transits": 3,
+      "observed_transit_numbers": [
+        14,
+        16,
+        17
+      ],
+      "odd_even_sigma": 0.5132883442973529,
+      "passed": false,
+      "period_days": 6.267000940144156,
+      "preprocessing": {
+        "binned": false,
+        "cadence_days": 0.0013888628927816171,
+        "detrending": "gap-separated running median; no flux clipping",
+        "n_input": 14642,
+        "n_segments": 3,
+        "n_used": 14642
+      },
+      "secondary_depth": 8.528849034616925e-05,
+      "secondary_snr": 8.430569591892567,
+      "sinusoid_amplitude": 9.60104596047709e-05,
+      "sinusoid_snr": 48.715262803051516,
+      "test_statuses": {
+        "odd_even": "evaluated",
+        "pixel_contamination": "not_evaluated",
+        "secondary": "evaluated",
+        "sinusoid": "evaluated",
+        "sky_vetting": "not_evaluated"
+      },
+      "tic": "261136679",
+      "transit_coverage": [
+        {
+          "n_samples": 83,
+          "sampled_duration_fraction": 0.9606301675072852,
+          "transit_number": 14
+        },
+        {
+          "n_samples": 86,
+          "sampled_duration_fraction": 0.9953517398268257,
+          "transit_number": 16
+        },
+        {
+          "n_samples": 86,
+          "sampled_duration_fraction": 0.9953517398268257,
+          "transit_number": 17
+        }
+      ]
+    }
+  ],
+  "total": 1
+}

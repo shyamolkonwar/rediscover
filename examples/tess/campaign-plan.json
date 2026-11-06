@@ -1,0 +1,356 @@
+{
+  "cohort": {
+    "discovery_sector": 1,
+    "intersection_count": 15,
+    "metadata_counts": [
+      1000,
+      1000
+    ],
+    "page_size": 1000,
+    "pages_per_sector": 1,
+    "selected_at": "2026-11-06T19:04:59.768939+00:00",
+    "selection": "First archive page per sector, intersection, numeric TIC sort, first requested count. Metadata only; not population-representative.",
+    "targets": [
+      {
+        "discovery": {
+          "dec_deg": -68.5723148355591,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000025079777-0120-s",
+          "ra_deg": 60.9549653335201,
+          "sector": 1,
+          "tic": "25079777",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000025079777-0120-s_lc.fits"
+        },
+        "tic": "25079777",
+        "validation": {
+          "dec_deg": -68.5723148355591,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000025079777-0124-s",
+          "ra_deg": 60.9549653335201,
+          "sector": 4,
+          "tic": "25079777",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000025079777-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -68.1136498471431,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000029829735-0120-s",
+          "ra_deg": 66.4129259081965,
+          "sector": 1,
+          "tic": "29829735",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000029829735-0120-s_lc.fits"
+        },
+        "tic": "29829735",
+        "validation": {
+          "dec_deg": -68.1136498471431,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000029829735-0124-s",
+          "ra_deg": 66.4129259081965,
+          "sector": 4,
+          "tic": "29829735",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000029829735-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -69.2676627915171,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000032154131-0120-s",
+          "ra_deg": 59.6291850308337,
+          "sector": 1,
+          "tic": "32154131",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000032154131-0120-s_lc.fits"
+        },
+        "tic": "32154131",
+        "validation": {
+          "dec_deg": -69.2676627915171,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000032154131-0124-s",
+          "ra_deg": 59.6291850308337,
+          "sector": 4,
+          "tic": "32154131",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000032154131-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -62.2048219618793,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000055400333-0120-s",
+          "ra_deg": 70.344431461643,
+          "sector": 1,
+          "tic": "55400333",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000055400333-0120-s_lc.fits"
+        },
+        "tic": "55400333",
+        "validation": {
+          "dec_deg": -62.2048219618793,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000055400333-0124-s",
+          "ra_deg": 70.344431461643,
+          "sector": 4,
+          "tic": "55400333",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000055400333-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -76.9040194878428,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000141029787-0120-s",
+          "ra_deg": 79.5362295593399,
+          "sector": 1,
+          "tic": "141029787",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000141029787-0120-s_lc.fits"
+        },
+        "tic": "141029787",
+        "validation": {
+          "dec_deg": -76.9040194878428,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000141029787-0124-s",
+          "ra_deg": 79.5362295593399,
+          "sector": 4,
+          "tic": "141029787",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000141029787-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -74.1090652044256,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000141123349-0120-s",
+          "ra_deg": 80.0442686368116,
+          "sector": 1,
+          "tic": "141123349",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000141123349-0120-s_lc.fits"
+        },
+        "tic": "141123349",
+        "validation": {
+          "dec_deg": -74.1090652044256,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000141123349-0124-s",
+          "ra_deg": 80.0442686368116,
+          "sector": 4,
+          "tic": "141123349",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000141123349-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -62.0428080443685,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000150142653-0120-s",
+          "ra_deg": 92.7628666481876,
+          "sector": 1,
+          "tic": "150142653",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000150142653-0120-s_lc.fits"
+        },
+        "tic": "150142653",
+        "validation": {
+          "dec_deg": -62.0428080443685,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000150142653-0124-s",
+          "ra_deg": 92.7628666481876,
+          "sector": 4,
+          "tic": "150142653",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000150142653-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -65.4236592109125,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000237933486-0120-s",
+          "ra_deg": 58.8839852278712,
+          "sector": 1,
+          "tic": "237933486",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000237933486-0120-s_lc.fits"
+        },
+        "tic": "237933486",
+        "validation": {
+          "dec_deg": -65.4236592109125,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000237933486-0124-s",
+          "ra_deg": 58.8839852278712,
+          "sector": 4,
+          "tic": "237933486",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000237933486-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -80.3650417965495,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000261062496-0120-s",
+          "ra_deg": 81.2441125043006,
+          "sector": 1,
+          "tic": "261062496",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000261062496-0120-s_lc.fits"
+        },
+        "tic": "261062496",
+        "validation": {
+          "dec_deg": -80.3650417965495,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000261062496-0124-s",
+          "ra_deg": 81.2441125043006,
+          "sector": 4,
+          "tic": "261062496",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000261062496-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -58.0163551715273,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000294153481-0120-s",
+          "ra_deg": 107.804899778814,
+          "sector": 1,
+          "tic": "294153481",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000294153481-0120-s_lc.fits"
+        },
+        "tic": "294153481",
+        "validation": {
+          "dec_deg": -58.0163551715273,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000294153481-0124-s",
+          "ra_deg": 107.804899778814,
+          "sector": 4,
+          "tic": "294153481",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000294153481-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -64.7004273044063,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000309613894-0120-s",
+          "ra_deg": 78.695517655595,
+          "sector": 1,
+          "tic": "309613894",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000309613894-0120-s_lc.fits"
+        },
+        "tic": "309613894",
+        "validation": {
+          "dec_deg": -64.7004273044063,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000309613894-0124-s",
+          "ra_deg": 78.695517655595,
+          "sector": 4,
+          "tic": "309613894",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000309613894-0124-s_lc.fits"
+        }
+      },
+      {
+        "discovery": {
+          "dec_deg": -58.9118959114723,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018206045859-s0001-0000000339862826-0120-s",
+          "ra_deg": 111.731533564147,
+          "sector": 1,
+          "tic": "339862826",
+          "uri": "mast:TESS/product/tess2018206045859-s0001-0000000339862826-0120-s_lc.fits"
+        },
+        "tic": "339862826",
+        "validation": {
+          "dec_deg": -58.9118959114723,
+          "exposure_seconds": 120.0,
+          "obs_id": "tess2018292075959-s0004-0000000339862826-0124-s",
+          "ra_deg": 111.731533564147,
+          "sector": 4,
+          "tic": "339862826",
+          "uri": "mast:TESS/product/tess2018292075959-s0004-0000000339862826-0124-s_lc.fits"
+        }
+      }
+    ],
+    "validation_sector": 4
+  },
+  "config": {
+    "alternate_window_days": 2.5,
+    "detrend_window_days": 1.5,
+    "durations_days": [
+      0.04,
+      0.08,
+      0.12
+    ],
+    "max_code_experiments": 3,
+    "max_seconds": 3600,
+    "min_transits": 3,
+    "null_repeats": 64,
+    "period_grid_size": 10000,
+    "period_max": 8.0,
+    "period_min": 1.0,
+    "seed": 42,
+    "snr_threshold": 8.0
+  },
+  "created_at": "2026-11-06T19:11:39.976718+00:00",
+  "kind": "tess_campaign",
+  "objective": "Search the 12 metadata-selected TIC targets for periodic transit-like signals in Sector 1, then independently test any candidates in reserved Sector 4 data.",
+  "proposal": {
+    "model": "gpt-6-sol",
+    "recorded_at": "2026-11-06T19:11:39.976278+00:00",
+    "requested_model": "gpt-6-sol",
+    "result": {
+      "falsification": [
+        "Fewer than three observed discovery transits or discovery SNR below 8.",
+        "The fixed Sector 1 ephemeris fails independent validation in Sector 4.",
+        "The signal depends materially on which of the two prespecified detrending windows is used.",
+        "Odd-even depth differences, a secondary eclipse, centroid motion, contamination, or instrumental behavior better explain the signal.",
+        "The candidate does not survive search-multiplicity handling across targets, periods, durations, and phases."
+      ],
+      "hypothesis": "At least one target may show a repeatable, transit-like dimming within the bounded search range; no detection or novelty is assumed.",
+      "objective": "Search the 12 metadata-selected TIC targets for periodic transit-like signals in Sector 1, then independently test any candidates in reserved Sector 4 data.",
+      "parameters": {
+        "alternate_window_days": 2.5,
+        "detrend_window_days": 1.5,
+        "durations_days": [
+          0.04,
+          0.08,
+          0.12
+        ],
+        "period_max": 8.0,
+        "period_min": 1.0
+      },
+      "prediction": "A viable candidate will have at least three observed Sector 1 transits, discovery SNR of at least 8, and transits at the predicted times in Sector 4.",
+      "rationale": "These bounds are fixed before flux inspection. Search only Sector 1; reserve Sector 4 for an independent, fixed-ephemeris test, not exploration or retuning. Account for the full search multiplicity, inspect alternative explanations, and review known catalogs before interpreting any surviving signal. The metadata-selected cohort is not population-representative, and no uncatalogued planet is promised."
+    },
+    "usage": {
+      "input_tokens": 3156,
+      "input_tokens_details": {
+        "cache_write_tokens": 3153,
+        "cached_tokens": 0
+      },
+      "output_tokens": 467,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 3623
+    },
+    "validated_config": {
+      "alternate_window_days": 2.5,
+      "detrend_window_days": 1.5,
+      "durations_days": [
+        0.04,
+        0.08,
+        0.12
+      ],
+      "max_code_experiments": 3,
+      "max_seconds": 3600,
+      "min_transits": 3,
+      "null_repeats": 64,
+      "period_grid_size": 10000,
+      "period_max": 8.0,
+      "period_min": 1.0,
+      "seed": 42,
+      "snr_threshold": 8.0
+    }
+  },
+  "rules": {
+    "holdout": "one-shot fixed-ephemeris evaluation after freeze",
+    "novelty": "No catalog match is not exhaustive novelty clearance",
+    "significance": "Surrogate p-values depend on the null model; no validated astrophysical FAP"
+  },
+  "schema_version": 1,
+  "search_family_size": 24
+}

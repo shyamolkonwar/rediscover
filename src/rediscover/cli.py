@@ -17,7 +17,7 @@ from .service import Lab
 
 
 def parser() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser(prog="rediscover", description="Rediscover physics in real gravitational-wave data")
+    p = argparse.ArgumentParser(prog="rediscover", description="Evidence-first gravitational-wave analysis and TESS discovery campaigns")
     p.add_argument("--version", action="version", version=__version__)
     p.add_argument("--home", help="Cache and evidence directory; default ~/.rediscover")
     commands = p.add_subparsers(dest="command", required=True)
@@ -47,6 +47,8 @@ def parser() -> argparse.ArgumentParser:
     bench.add_argument("--no-hidden", action="store_true")
     bench.add_argument("--seed", type=int, default=42)
     commands.add_parser("mcp", help="Start the stdio MCP server")
+    from .tess_cli import add_commands
+    add_commands(commands)
     return p
 
 
@@ -58,7 +60,10 @@ def main() -> None:
         return
     try:
         lab = Lab(args.home)
-        if args.command == "doctor":
+        if args.command == "tess":
+            from .tess_cli import handle
+            result = handle(args)
+        elif args.command == "doctor":
             names = ["numpy", "scipy", "h5py", "pycbc", "gwpy", "mcp"]
             versions = {name: importlib.metadata.version(name) for name in names}
             result = {"version": __version__, "dependencies": versions,

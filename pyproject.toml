@@ -4,15 +4,15 @@ build-backend = "hatchling.build"
 
 [project]
 name = "rediscover-physics"
-version = "0.1.0"
-description = "Reproduce gravitational-wave analyses with real open data, numerical tools, and an evidence-first MCP interface."
+version = "0.2.0"
+description = "Evidence-first gravitational-wave analysis and TESS candidate-search research campaigns."
 readme = "README.md"
 requires-python = ">=3.12,<3.14"
 license = "MIT"
 authors = [{name = "Shyamol Konwar"}]
 keywords = ["physics", "gravitational-waves", "mcp", "open-science"]
 classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "Topic :: Scientific/Engineering :: Physics"]
-dependencies = ["filelock>=4.2.1,<5", "setuptools>=84.1,<85", "pillow>=13,<14", "numpy>=1.26,<3", "scipy>=1.11,<2", "matplotlib>=3.8,<4", "h5py>=3.10,<4", "httpx>=0.28,<1", "mcp>=2.3,<3", "pycbc>=2.11,<3", "gwpy>=3,<4"]
+dependencies = ["astropy>=7,<9", "astroquery>=0.4.11,<0.5", "filelock>=4.2.1,<5", "setuptools>=84.1,<85", "pillow>=13,<14", "numpy>=1.26,<3", "scipy>=1.11,<2", "matplotlib>=3.8,<4", "h5py>=3.10,<4", "httpx>=0.28,<1", "mcp>=2.3,<3", "pycbc>=2.11,<3", "gwpy>=3,<4"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10", "ruff>=0.11,<1", "build>=1.2,<2", "pip-audit>=2.9,<3"]

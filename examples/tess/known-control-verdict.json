@@ -1,0 +1,23 @@
+{
+  "campaign_id": "5ea9842e57f34633aa69dc4591ef0501",
+  "confirmed_new_planets": 0,
+  "counts": {
+    "REJECTED": 1
+  },
+  "limitations": [
+    "Bounded preliminary search; no automated discovery claim",
+    "Surrogate calibration is approximate and may lack multiplicity resolution",
+    "Catalog metadata and aperture moments are not exhaustive novelty/blend clearance"
+  ],
+  "objective": "Validate the research workflow on known pi Mensae c without supplying its period to search",
+  "targets": [
+    {
+      "reasons": [
+        "odd_even_depth_mismatch"
+      ],
+      "status": "REJECTED",
+      "tic": "261136679"
+    }
+  ],
+  "total_targets": 1
+}
