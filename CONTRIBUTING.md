@@ -10,6 +10,7 @@ Python 3.12 or 3.13, Linux recommended (the release verification platform). macO
 git clone https://github.com/shyamolkonwar/rediscover.git
 cd rediscover
 uv sync --extra dev
+docker build -t rediscover-research:0.2.0 -f docker/research.Dockerfile .
 uv run pytest -q
 uv run ruff check src tests
 ```

@@ -1,43 +1,92 @@
 # Rediscover
 
-**Find a gravitational-wave signal in real detector data. Show the evidence.**
+**Search real space data. Test a hypothesis. Keep the evidence—even when it fails.**
 
-A CPU-only physics workbench and MCP server for students, educators, curious builders and agent developers. Download public LIGO strain, run a numerical template search, inspect the chirp, and export a source-linked report. No phone, hardware, GPU or AI subscription required for the core workflow.
+An open-source physics workbench with a CLI, MCP tools and optional Azure-backed research agents.
 
-[Example results](examples/verified/RESULTS.md) · [Usage](docs/USAGE.md) · [Physics](docs/PHYSICS.md) · [Security](SECURITY.md) · [Releases](https://github.com/shyamolkonwar/rediscover/releases)
+- **TESS research campaigns:** search telescope light curves, freeze candidate hypotheses, test independent observations, examine alternative explanations and check catalogs.
+- **LIGO reproduction:** recover known gravitational-wave signals from public detector data with numerical evidence and offline reports.
 
-![Real GW150914 Hanford strain, conditioned signal, Q-transform and matched-filter SNR](docs/assets/gw150914-h1.png)
+**Scientific status:** the TESS workflow is experimental. It is not a validated planet classifier and has not established a new planet. Its first real campaign and its known-control failure are published rather than hidden.
 
-## Run it
+[Actual TESS results](examples/tess/RESULTS.md) · [TESS guide](docs/TESS_USAGE.md) · [Transit method](docs/TRANSIT_METHOD.md) · [LIGO results](examples/verified/RESULTS.md) · [Security](SECURITY.md)
 
-Requires **Python 3.12 or 3.13**. Linux/Python 3.12 is the release-verified platform. macOS and Windows are not yet validated; use Linux or WSL2 if numerical dependencies fail to install. The scientific stack is substantial; installation time depends on wheel availability and your connection.
+## What the TESS upgrade actually did
 
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
+On an Azure CPU VM, a research model proposed a bounded search before the data were inspected. The system then:
+
+1. Froze a metadata-selected cohort of **12 stars**, with Sector 1 for discovery and Sector 4 reserved for validation.
+2. Searched both predeclared detrending variants.
+3. Froze **six follow-up ephemerides** that met the SNR/repetition rule.
+4. Had the model propose, write and execute **two exploratory tests** inside restricted Docker containers, using discovery data only.
+5. Evaluated the frozen ephemerides against independent Sector 4 observations, without re-searching or retuning them.
+6. Recorded the rejection reasons and catalog responses in offline dossiers.
+
+**No candidate survived the full screening rules. No new planet was established.**
+
+A separate known pi Mensae c control recovered approximately **6.267 days**, with a strong dip at the predicted times in both sectors. However, the conservative odd/even and variability/secondary screens also flagged that known planet. This is a real false-rejection/sensitivity limitation of the screening rules—not a passing control. We did not relax the thresholds or reuse its validation data to force a pass.
+
+The system therefore demonstrates a real search–experiment–validation workflow, **not validated completeness, reliability, autonomous discovery, or scientific novelty**. Read [the results](examples/tess/RESULTS.md) before interpreting a candidate.
+
+## Install this development upgrade
+
+Python 3.12 on Linux is the verified platform. The scientific dependencies are substantial. The existing v0.1.0 release is LIGO-only; this TESS upgrade is on its review branch:
 
 ```sh
-uv tool install --python 3.12 'git+https://github.com/shyamolkonwar/rediscover.git@v0.1.0'
+uv tool install --python 3.12 \
+  'git+https://github.com/shyamolkonwar/rediscover.git@feat/tess-discovery-campaigns'
 rediscover doctor
-rediscover run GW150914-v3 --catalog
 ```
 
-Or install the wheel from the [GitHub release](https://github.com/shyamolkonwar/rediscover/releases/tag/v0.1.0) inside a virtual environment. The distribution is named `rediscover-physics`; the existing PyPI project `rediscover` is unrelated. **This release is distributed through GitHub, not PyPI.**
+The distribution is `rediscover-physics`. The unrelated PyPI package `rediscover` is **not** this project. This project is distributed through GitHub, not PyPI.
 
-Open the HTML path printed by the command. It contains the real plots, measurements, source URLs, input hashes, numerical settings and limitations. Plots are embedded, so the HTML works offline. Keep the run directory if you want the full evidence bundle.
+## Run a TESS campaign without an AI account
 
-### What you will see
+```sh
+# Plan and freeze a metadata-selected cohort before searching flux:
+rediscover tess plan --count 12 --discovery-sector 1 --validation-sector 4
 
-For GW150914, the release run returned:
+# Use the returned campaign ID:
+rediscover tess search CAMPAIGN_ID
+rediscover tess freeze CAMPAIGN_ID
+rediscover tess validate CAMPAIGN_ID
+rediscover tess review CAMPAIGN_ID
+rediscover tess report CAMPAIGN_ID
+```
 
-| Detector | Peak matched-filter SNR | Detector-frame chirp mass [solar masses] |
-|---|---:|---:|
-| Hanford H1 | 19.440 | 32.559 |
-| Livingston L1 | 14.023 | 30.469 |
+Or perform the staged numerical workflow with one command:
 
-The difference between independently fitted detector peak times was about **5.86 ms**. These are finite-bank reproduction results, **not** a new discovery, significance measurement, precision sky localization, or Bayesian mass inference. The mismatch between detector mass estimates illustrates the limits of a coarse bank.
+```sh
+rediscover tess discover --count 12
+```
 
-## Use it from an AI agent
+The HTML report is self-contained. The full campaign directory retains original arrays, source checksums, settings, hypotheses, measurements, catalog snapshots, model proposals and execution records.
 
-After installation, add this stdio MCP server to your MCP host:
+A zero-candidate outcome is valid. Download failures, insufficient observations and incomplete novelty checks are not silently converted into successes.
+
+## Let an agent design and run exploratory tests
+
+Set `REDISCOVER_API_BASE` and `REDISCOVER_API_KEY` using your environment manager. The Azure base ends in `/openai/v1`; never commit or paste credentials into an issue.
+
+Build the optional research container on the Linux execution machine:
+
+```sh
+git clone --branch feat/tess-discovery-campaigns https://github.com/shyamolkonwar/rediscover.git
+cd rediscover
+docker build -t rediscover-research:0.2.0 -f docker/research.Dockerfile .
+
+rediscover tess discover --count 12 --model YOUR_DEPLOYMENT --allow-code
+```
+
+The model proposes bounded search settings before flux inspection. After search—but **before hypothesis freeze**—it can write exploratory tests against a restricted discovery-data file. A separate deterministic verifier assigns the final status.
+
+Generated Python runs non-root, without network or host credentials, with read-only inputs, CPU/memory/process limits, a hard execution timeout, bounded JSON output and verified container cleanup. This is Docker isolation on a trusted host, **not a perfect security boundary against malicious code or kernel exploits**. See [sandbox details](docs/RESEARCH_SANDBOX.md).
+
+Research slots are durably reserved before paid experiment proposals. Exhausted quotas cannot trigger extra proposal/critique calls. Model interpretations remain exploratory and are not automatically accepted as scientific evidence.
+
+## Use MCP
+
+After installation, add the stdio server to your MCP host:
 
 ```json
 {
@@ -51,73 +100,43 @@ After installation, add this stdio MCP server to your MCP host:
 }
 ```
 
-If your host does not inherit your shell PATH, use the absolute installed executable path. An [example configuration](examples/mcp-config.json) is included. No Azure key is needed for MCP: your existing agent supplies the model.
+Ask your agent:
 
-Ask:
+> Plan a bounded TESS search, keep the validation sector hidden until hypotheses are frozen, test the candidates, and show both the evidence and reasons not to call them planets.
 
-> Analyze GW150914-v3 with Rediscover. Check both detectors' data quality, run the matched filter, explain the mass estimates and timing difference, and make a report. Cite tool evidence; do not quote memorized numbers as measurements.
+The TESS tools are `tess_plan`, `tess_search`, `tess_freeze_hypotheses`, `tess_validate`, `tess_review`, `tess_status` and `tess_report`. The optional `tess_experiment` tool is registered only when the operator sets `REDISCOVER_ENABLE_CODE_EXPERIMENTS=1`; its Docker image must already exist. Your MCP host supplies the model, so MCP use itself needs no Azure key.
 
-The tools handle data access, quality checks, bounded numerical analysis, catalog references, reports and artifact verification. No arbitrary shell or generated-code execution is exposed.
-
-## What makes this different from a chat demo?
-
-- **Real inputs:** official GWOSC HDF5, source/version recorded, checksummed downloads. Failed downloads stay failed.
-- **Numerical authority:** PyCBC performs PSD-weighted IMRPhenomD matched filtering. The model does not calculate the result in prose.
-- **Inspectable evidence:** immutable run inputs, per-tool evidence IDs, library versions, settings and artifact checksums.
-- **Bounded agent harness:** optional Responses-compatible model integration with call/output budgets and validation of final numbers against evidence.
-- **Opaque test tasks:** synthetic physical waveforms injected into actual detector strain, plus a no-added-signal control. The agent cannot read injection truth through its tools.
-- **No compulsory AI:** the entire scientific workflow works from the CLI.
-
-## Check an agent
-
-Use your own Azure or Responses-compatible provider. Set `REDISCOVER_API_BASE` and `REDISCOVER_API_KEY` using your environment manager; never put credentials in an issue or commit. Azure bases end in `/openai/v1`.
+## Existing LIGO workflow
 
 ```sh
-rediscover fetch GW150914-v3
-rediscover agent RUN_ID --model YOUR_DEPLOYMENT
-rediscover report RUN_ID
-
-# Numerical baseline, no model bill:
-rediscover bench
-
-# Explicit paid model evaluation:
-rediscover bench --model YOUR_DEPLOYMENT
+rediscover run GW150914-v3 --catalog
+rediscover bench                  # deterministic demonstration suite
+rediscover bench --model YOUR_DEPLOYMENT  # explicit paid model test
 ```
 
-The built-in model runner shares the same application layer as MCP; it uses Responses function tools. The MCP transport is independently tested over stdio.
+The LIGO commands and MCP tools remain available. The [v0.1 evidence](examples/verified/RESULTS.md) and [method](docs/PHYSICS.md) are historical, version-specific artifacts. Peak SNR is not a false-alarm probability; mass estimates are coarse detector-frame template-bank points, not Bayesian posterior intervals.
 
-The checked-in release evidence includes actual Azure runs with **gpt-6-sol and gpt-5.5**, not synthetic API responses. Each completed all six demonstration tasks with grounded final fields. Both scored the same as the deterministic baseline. **This is not evidence that one model is better, or that agents can independently discover gravitational waves.** Read the [results and rubric correction](examples/verified/RESULTS.md).
+## Scientific boundaries
 
-## Scientific scope
+- Only the best periodic peak is investigated per star; the search is not complete for all planets or aliases.
+- Diagnostic depth errors assume simplified noise. Correlated noise can produce both false positives and false rejections.
+- A reserved sector tests the frozen ephemeris once. A failed or interrupted holdout is not secretly re-searched.
+- Default surrogate counts are preliminary and cannot clear the full campaign multiplicity cutoff. This is explicitly shown in reports. More repetitions must be configured **before** searching, not after seeing favorable results.
+- Catalog matching covers specific NASA tables and period aliases. Scholarly metadata searches do not provide exhaustive literature/ExoFOP clearance.
+- Aperture centroids and crowding are not full pixel-level blend validation.
+- `POTENTIALLY_UNCATALOGUED_CANDIDATE` is a review queue, never a confirmed planet or guaranteed discovery.
+- A trusted operator can inspect public data or create another campaign. The application enforces within-campaign separation, not global blindness against that operator.
 
-The default bank searches nonspinning component masses from 20 to 50 solar masses. Only event versions exposing short 32-second, 4-kHz H1/L1 strain pairs are supported. It is not a general neutron-star, high-spin or full-catalog search pipeline.
-
-Important limits:
-
-- Peak SNR is not a false-alarm probability. There is no calibrated background study or chi-square glitch veto.
-- Masses are **detector-frame** bank points, not source-frame masses or posterior intervals.
-- The search is centered on a supplied event time; it is not a blind discovery.
-- Short-segment PSD estimates can contain the signal. In the opaque tasks the known event remains outside the search window in the same real segment; this is disclosed.
-- A noise peak still has a best-matching template. Its masses must not be interpreted as a measured binary.
-- Checksums detect accidental modification; they do not authenticate against someone who controls the machine.
-
-See [the numerical method](docs/PHYSICS.md) for normalization, padding, data-quality boundaries and tests.
-
-## Develop and contribute
+## Develop
 
 ```sh
-git clone https://github.com/shyamolkonwar/rediscover.git
-cd rediscover
 uv sync --frozen --extra dev
+docker build -t rediscover-research:0.2.0 -f docker/research.Dockerfile .
 uv run pytest -q
 uv run ruff check src tests
 uv build
 ```
 
-The offline suite includes numerical positive/negative controls, malformed input, model-output rejection, concurrent evidence writes and a real MCP subprocess. Two additional real-data tests run when `REDISCOVER_REAL_DATA` points to the documented official fixtures. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Tests include synthetic transits, independent holdouts, binary/variability and noise controls, research quotas, immutable evidence, actual Docker isolation and a real MCP client/server exchange. Real-data fixtures are opt-in as described in the methods documentation.
 
-## Attribution
-
-Built on [GWOSC](https://gwosc.org/), [PyCBC](https://pycbc.org/), [LALSuite](https://lscsoft.docs.ligo.org/lalsuite/), [GWPy](https://gwpy.github.io/) and the [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk).
-
-Use of the underlying data must follow [GWOSC attribution guidance](https://gwosc.org/acknowledgement/). This project is not affiliated with or endorsed by LIGO, Virgo, KAGRA or the named model providers. Code: [MIT](LICENSE). Public-data sources and hashes accompany each generated analysis.
+Built on NASA TESS/MAST, the NASA Exoplanet Archive, Astropy, Astroquery, GWOSC, PyCBC, LALSuite, GWPy and MCP. Code: [MIT](LICENSE). Underlying data and dependencies retain their own attribution/license terms. No endorsement by these institutions or model providers is implied.

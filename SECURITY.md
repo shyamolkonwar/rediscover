@@ -3,7 +3,7 @@
 This is a local, single-user educational analysis tool. It is not a public multi-tenant service or an adversarial-code sandbox.
 
 - The MCP server uses stdio only. No unauthenticated public HTTP service is started.
-- No arbitrary shell, code execution, file deletion, user-supplied URL download or upload tool is exposed.
+- No host shell, file deletion, arbitrary URL download or upload tool is exposed. Generated research Python is disabled by default; explicit operator opt-in enables the restricted Docker executor described in `docs/RESEARCH_SANDBOX.md`. This is not a perfect isolation boundary against kernel exploits.
 - Data requests use an HTTPS hostname allowlist and validate each redirect, with bounded response sizes.
 - Input samples are parsed as HDF5 and NumPy with `allow_pickle=False`. Keep native numerical libraries updated.
 - Run IDs and artifact names are restricted; symlink escapes are rejected. A malicious local OS account with write access can still alter data and checksums. A checksum manifest is not a signature.

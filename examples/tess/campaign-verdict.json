@@ -1,0 +1,106 @@
+{
+  "campaign_id": "45676bd7c57547c69de74c953a5daa01",
+  "confirmed_new_planets": 0,
+  "counts": {
+    "REJECTED": 12
+  },
+  "limitations": [
+    "Bounded preliminary search; no automated discovery claim",
+    "Surrogate calibration is approximate and may lack multiplicity resolution",
+    "Catalog metadata and aperture moments are not exhaustive novelty/blend clearance"
+  ],
+  "objective": "Search the 12 metadata-selected TIC targets for periodic transit-like signals in Sector 1, then independently test any candidates in reserved Sector 4 data.",
+  "targets": [
+    {
+      "reasons": [
+        "failed_independent_observation_test"
+      ],
+      "status": "REJECTED",
+      "tic": "25079777"
+    },
+    {
+      "meaning": "No retained candidate in the searched range; not proof the star has no planets.",
+      "reasons": [
+        "no_adequate_repeating_signal"
+      ],
+      "status": "REJECTED",
+      "tic": "29829735"
+    },
+    {
+      "reasons": [
+        "odd_even_depth_mismatch"
+      ],
+      "status": "REJECTED",
+      "tic": "32154131"
+    },
+    {
+      "reasons": [
+        "odd_even_depth_mismatch"
+      ],
+      "status": "REJECTED",
+      "tic": "55400333"
+    },
+    {
+      "meaning": "No retained candidate in the searched range; not proof the star has no planets.",
+      "reasons": [
+        "no_adequate_repeating_signal"
+      ],
+      "status": "REJECTED",
+      "tic": "141029787"
+    },
+    {
+      "meaning": "No retained candidate in the searched range; not proof the star has no planets.",
+      "reasons": [
+        "no_adequate_repeating_signal"
+      ],
+      "status": "REJECTED",
+      "tic": "141123349"
+    },
+    {
+      "reasons": [
+        "odd_even_depth_mismatch"
+      ],
+      "status": "REJECTED",
+      "tic": "150142653"
+    },
+    {
+      "meaning": "No retained candidate in the searched range; not proof the star has no planets.",
+      "reasons": [
+        "no_adequate_repeating_signal"
+      ],
+      "status": "REJECTED",
+      "tic": "237933486"
+    },
+    {
+      "reasons": [
+        "odd_even_depth_mismatch"
+      ],
+      "status": "REJECTED",
+      "tic": "261062496"
+    },
+    {
+      "meaning": "No retained candidate in the searched range; not proof the star has no planets.",
+      "reasons": [
+        "no_adequate_repeating_signal"
+      ],
+      "status": "REJECTED",
+      "tic": "294153481"
+    },
+    {
+      "reasons": [
+        "sinusoidal_variability"
+      ],
+      "status": "REJECTED",
+      "tic": "309613894"
+    },
+    {
+      "meaning": "No retained candidate in the searched range; not proof the star has no planets.",
+      "reasons": [
+        "no_adequate_repeating_signal"
+      ],
+      "status": "REJECTED",
+      "tic": "339862826"
+    }
+  ],
+  "total_targets": 12
+}

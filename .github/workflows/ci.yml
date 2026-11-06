@@ -17,5 +17,6 @@ jobs:
           version: '0.13.7'
       - run: uv sync --frozen --extra dev
       - run: uv run ruff check src tests
+      - run: docker build -t rediscover-research:0.2.0 -f docker/research.Dockerfile .
       - run: uv run pytest -q
       - run: uv build

@@ -1,4 +1,4 @@
-"""Stdio MCP tools. No HTTP listener, arbitrary code execution or shell tools."""
+"""Stdio MCP tools. Optional restricted research execution requires operator opt-in."""
 from __future__ import annotations
 
 import os
@@ -23,7 +23,10 @@ def guide() -> dict:
             "limits": LIMITATIONS,
             "data": "32-second 4096-Hz H1/L1 GWOSC segments; not all catalog events have these.",
             "privacy": "Data and artifacts are stored locally. Your MCP host controls what reaches its model.",
-            "safety": "No arbitrary URL, shell, code, upload, or deletion tool is exposed."}
+            "tess_workflow": ["tess_plan", "tess_search", "optional operator-enabled tess_experiment",
+                              "tess_freeze_hypotheses", "tess_validate", "tess_review", "tess_report"],
+            "tess_scope": "Candidate search and falsification, never automatic planet confirmation.",
+            "safety": "No arbitrary URL, host shell, upload or deletion tool. Research Python is Docker-restricted and disabled by default."}
 
 
 def create_server(root=None):
@@ -82,6 +85,8 @@ def create_server(root=None):
         """Verify saved artifact checksums; this checks integrity, not scientific correctness."""
         return lab.workspace.verify(run_id)
 
+    from .tess_mcp import register_tess
+    register_tess(server, root, read, local, remote)
     return server
 
 
